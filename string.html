@@ -1,0 +1,197 @@
+<!-- <head>
+<body>
+    <script>
+        var str1 = new String("Kanchan");
+        console.log(str1);
+        console.log(str1.length);
+        console.log(str1[0]);
+        console.log(typeof(str1));
+        console.log(str1.length);
+        str2 = str1.at(2);
+        console.log(str2);
+        
+        //MEthods
+       
+    </script>
+</body>
+</head> -->
+
+   <script>
+            //description
+            //string.prototype.charAt()
+            //charAt(index) -> String
+            // var str1 = new String("Hello world of JS");
+            // var num1 = 10;     //html tag, web form, file, database
+            // if(str1.length<num1){
+            //     var str2 = str1.charAt(-5);
+            //     console.log(str2);
+            // }
+            // else{
+            //     console.log("Error");
+            // }
+            // char code at index-> number
+            //example
+            // var str1=new String("hello world from js");
+            // var index=21;
+            // if (index<str1.length){
+
+            //     var num1=str1.charCodeAt(5);
+            //     console.log(num1)
+            // }
+            // else{
+            //     console.log("index out of range")
+            // }
+            
+            
+
+            // example
+
+            // var str1 = new String("Hello world of JS");
+            // var num1=str1.codePointAt(2)  ;  //unicode n number of character
+            // console.log(num1);
+
+            // concat(str1)
+            // concat(str1,str2)
+            // concat(str1,str2,....,str n)
+
+            // // example
+            // var str1=new String('hello world from js');
+            // var str2=str1.concat(", broadway"," infosys"," nepal");
+            // var str3='hello world from js'+", broadway"+" infosys"+" nepal"
+            // console.log(str2);
+            // console.log(str3);
+
+            // endsWith()->boolean
+            // example
+
+            // endsWith(searchString)
+            // endsWith(searchString, length)  
+            // 4,5-,6?7/8,9;
+
+            // var str1=new String('hello world from js');
+            // var result=str1.endsWith("JS");
+            // var result1=str1.endsWith("js");
+            
+            // console.log(result);
+            // console.log(result1);
+
+            // String.fromCharCode()->string of length N
+            //example
+            // String.fromCharCode(num1)
+            // String.fromCharCode(num1, num2)
+            // String.fromCharCode(num1, num2, ..., numN)
+                // var result=String.fromCharCode(97);
+                // console.log(result);
+
+
+            // print char and ascii code from 0 to 255.
+            // 0->char
+            // 255->char
+            
+            // for(var i=0;i<=255;i++){
+
+            //     var result=String.fromCharCode(i);
+            //     console.log(result);
+            // }
+
+            // String.prototype.includes()->Boolean
+            // includes(searchString)
+            // includes(searchString, position)
+
+            // example
+                // var str1=new String('hello world from js');
+                // var result=str1.includes("world");
+                // var result1=str1.includes("suraj");
+                // console.log(result)
+                // console.log(result1)
+
+                // String.prototype.indexOf()->index of the first occurrence of searchString number
+                // indexOf(searchString)
+                // indexOf(searchString, position) 
+                // str1=new String('The indexOf() method, given one argument: a substring to search for, searches the entire calling string, and returns the index of the first occurrence of the specified substring. Given a second argument: a number, the method returns the first occurrence of the specified substring at an index greater than or equal to the specified number.')
+                // var result= str1.indexOf("The");
+                // console.log(result)
+                // var result= str1.indexOf("the", result+"the".length);
+                // console.log(result)
+                // // homework how may the in the string  count chainxa tespachi indexof use garne
+
+
+                // String.prototype.replace()->new string
+                
+                // // replace(regexp, newSubstr)
+                // // replace(regexp, replacerFunction)
+                // // replace(substr, newSubstr)
+                // // replace(substr, replacerFunction)
+                // //example
+                // var str1=new String("The replace() method returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function called for each match. If pattern is a string, only the first occurrence will be replaced.");
+                // var result= str1.indexOf("The");
+                // console.log(str1);
+                // str2 = str1.replace("The", "these");
+                // console.log(str2);
+            
+            // String.prototype.replaceAll()->string
+
+            // replaceAll(regexp, newSubstr)
+            // replaceAll(regexp, replacerFunction)
+            // replaceAll(substr, newSubstr)
+            // replaceAll(substr, replacerFunction)
+            // example
+
+
+            // str3=str1.replaceAll("The", these);
+            // console.log(str3)
+
+            // example
+            // String.prototype.slice()->string
+            // slice(beginIndex)
+            // slice(beginIndex, endIndex)
+            // var str1=new String("Broadway infosys nepal");
+            // var str2=str1.slice()
+            // var str2=str1.slice(5)
+            // var str2=str1.slice(5,10)       // character from 6 to 10 is sliced
+            // console.log(str2)
+
+            // example
+            // String.prototype.split()->An Array of strings
+            // split()
+            // split(separator)
+            // split(separator, limit)
+
+            // var str1=new String("")
+
+
+
+
+
+            // math
+            // properties
+            console.log(Math.PI)
+            console.log(Math.pow(7, 2));
+            // methods
+            console.log(Math.abs(-3))   //absolute value of the given number
+            console.log(Math.exp(0))  //exponential and power
+            console.log(Math.floor(2.6765576)) //flooring of 
+            console.log(Math.ceil(2.6765576))
+            console.log(Math.ceil(1.34))
+            console.log(Math.random());
+            
+            console.log(Math.max(1, 7, 2))
+            console.log(Math.min(2, 3, 1));
+            
+            // Math.pow(base, exponent)
+            console.log(Math.pow(2, 3));
+
+            console.log(Math.sqrt(4))
+            console.log(Math.round(2.3))
+            console.log(Math.round(2.9))
+
+            // Number.prototype.toFixed(N)  #digit after decimal
+            function financial(x) {
+                return Number.parseFloat(x).toFixed(1);
+                }
+                console.log(financial(123.456));
+                console.log(financial(0.004));
+                               
+                console.log(Number.parseFloat(1.8993).toFixed(3));
+                console.log(Number(1.8996).toFixed(3));
+            </script>
