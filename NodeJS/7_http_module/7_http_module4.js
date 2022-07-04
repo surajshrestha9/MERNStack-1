@@ -1,41 +1,20 @@
-// create a sever
+//create a server
 
-var http= require('http')
-var url=require('url')
-var server=http.createServer((req,res)=>{
-    if(req.url === "/form1"){
-        fs.readFile('./form-1.html', 'utf-8', function(err, html){
-            res.writeHead(200, {"Content-Type":"text/html"});
-            res.end(html); 
-        });
-   
+var http = require("http");
+
+var server = http.createServer((request, response)=>{
+    if(request.method==='GET'){
+        response.writeHeader(200, {"Content-Type":"text/html"});
+        response.write("Hello from GET Method");
     }
-    else if(req.url === "/form2"){
-        fs.readFile('./form-1.html', 'utf-8' );
-   
+    else if(request.method ==='POST'){
+        response.writeHeader(200, {"Content-Type":"text/html"});
+        response.write("Hello from POST Method");
     }
-    
-    /* console.log(req.method+" -> "+Date());
-    // console.log(req.url)
-    res.writeHeader(200, {"Content-Type":"text/html"})
-    res.write("hello1"); */
-
-
-    /* if(req.method==="GET"){
-    res.writeHeader(200, {"Content-Type":"text/html"})
-    res.write("hello from GET method")
-}
-else if(req.method==="POST"){
-    res.writeHeader(200, {"Content-Type":"text/html"})
-    res.write("hello from POST method")
-}
-else{
-    res.writeHeader(405,"unknown method", {"Content-Type":"text/html"})
-    res.write("405")
-} */
-
-    res.end("hello")
+    else{
+        response.writeHeader(405, "Unknown method", {"Content-Type":"text/html"});
+        response.write("405 Unknown method error!");
+    }
+    response.end();
 });
-server.listen(8000,'127.0.0.1',()=>{
-    console.log("server is started")
-})
+server.listen(8000, '192.168.102.221');

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Contact</title
+    </head>
+    <body>
+        <h1>Contact Page</h1>
+        <h1>WElcome to my site</h1>
+        <p> <a href="/">Index</a> </p>
+        <p> <a href="/about">About Us</a> </p>
+        <p> <a href="/services">Services</a> </p>
+        
+        <p>Shriganesh Marg, Subidhanagar, Tinkune, Kathmandu 44600, Nepal
+        +977-1-4117578, 4111849, 4111583
+        9841002000, 9808724535
+        info@broadwayinfosys.com
+        hr@broadwayinfosys.com
+        support@broadwayinfosys.com
+        inquiry@broadwayinfosys.com</p>
+    </body>
+</html>

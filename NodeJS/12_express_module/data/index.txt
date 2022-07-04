@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>TITLE</title
+    </head>
+    <body>
+        <h1>WElcome to my site</h1>
+        
+        <p> <a href="/about">About Us</a> </p>
+        <p> <a href="/services">Services</a> </p>
+        <p> <a href="/contact">Contact</a> </p>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Services</title
+    </head>
+    <body>
+        <h1>Services Page</h1>
+        <h1>WElcome to my site</h1>
+        <p> <a href="/">Index</a> </p>
+        <p> <a href="/about">About Us</a> </p>
+        
+        <p> <a href="/contact">Contact</a> </p>
+        <p>Professional IT Training leads to individuals being qualified for jobs and projects. Broadway Infosys has been providing consistent vacancy and career opportunities, in-house and external, to deserving candidates with decent salary prospects! If you are a part of us, you are a part of our facilities as well! Here are some career opportunities that you may be interested in!</p>
+    </body>
+</html>

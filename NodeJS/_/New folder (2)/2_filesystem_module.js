@@ -80,33 +80,18 @@ while (filesLeft) {
   else filesLeft = false;
 }
 */
-// global info
-// console.log(__dirname);
-// console.log(_filename);
-// console.log(process.argv);
 
 // Global info
 console.log(__dirname);
 console.log(__filename);
 console.log(process.argv);
 
-<<<<<<< HEAD
-// console.log(__dirname);
-// console.log(__filename);
-// console.log(process.argv);
-
-/* var path = "./Folder-1";
-fs.access(path, (error) => {  //existence check if error make mkdir
-    if (error) {
-        fs.mkdir(path, (error) => {     //create new
-=======
 // Creating a new directory
 /*
 var path = "./Folder-1";
 fs.access(path, (error) => { //existance
     if (error) {
         fs.mkdir(path, (error) => { //create new
->>>>>>> 0c8c2cc7d79916c7a029e1ab3130cae236d06de9
             if (error) {
               console.log(error);
             } 
@@ -118,8 +103,8 @@ fs.access(path, (error) => { //existance
     else {
         console.log("Folder already exists");
     }
-}); */
-
+});
+*/
 
 
 //Remove directory
@@ -138,7 +123,7 @@ fs.rmdir(path, (error) => {
 var path = "./Folder-1/Folder-2/Folder-3";
 fs.access(path, (error) => {  
   if (error) {
-    fs.mkdir(path, { recursive: true }, (error) => {   //recursive true nesting
+    fs.mkdir(path, { recursive: true }, (error) => {
       if (error) {
         console.log(error);
       } else {
