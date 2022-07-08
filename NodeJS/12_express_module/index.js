@@ -1,192 +1,251 @@
-//Example-1
-// var express = require('express')
-// var app = express()
-// app.get('/',(req, res)=>{
-//     res.send('Hello Express')
-// })
-// app.get('/about',(req, res)=>{
-//     res.send('About')
-// })
-// app.get('/service',(req, res)=>{
-//     res.send('Service')
-// })
-// app.get('/contact',(req, res)=>{
-//     res.send('{"contact": "Niroj 98214132"}')
-// })
+// Example-1
+/*
+var express = require("express");
+var app = express();
+app.get('', (request, response)=>{
+    response.send("Hello world of express!");
+});
+app.listen(8000);
+*/
 
-// app.get('*',(req,res)=>{
-//     res.status(404).send('Not found')
-// })
-// app.listen(8000)
+// Example-2 - Multiple Request
+/*
+var express = require("express");
+var app = express();
+app.get('', (request, response)=>{
+    response.send("Index page!");
+});
+app.get('/about', (request, response)=>{
+    response.send("About Us");
+});
+app.get('/services', (request, response)=>{
+    response.send("Our Services");
+});
+app.get('/contact', (request, response)=>{
+    response.send("Contact Us");
+});
+app.get('*', (request, response)=>{
+    response.send("404 Page not found!");
+});
+app.listen(8000);
+*/
+
+// Example-3- HTML Contents
+/*
+var express = require("express");
+var app = express();
+app.get('', (request, response)=>{
+    var str1 = `
+    <html>
+        <head><title>Index Page</title></head>
+        <body>
+            <h1>Welcome to mysite.com</h1>
+            <p><a href=''>Index</a> | <a href='/about'>About Us</a> |<a href='/services'>Services</a> | <a href='/contact'>Contact Us</a></p>
+        </body>
+    </html>`;
+    response.send(str1);
+});
+app.get('/about', (request, response)=>{
+    var str1 = `
+    <html>
+        <head><title>About Us</title></head>
+        <body>
+        <h1>About Us</h1>
+        <p>Building Global IT Professionals since 2008<br/>
+        AN ISO 9001:2015 CERTIFIED IT LEARNING CENTER<br/>
+        Broadway Infosys Nepal is one of the best inclusive computer training institutes in Kathmandu, Nepal. Established in 2008, our professional IT Training and Development center has been employing experts in this field to impart professional education.</p>
+        <p><a href='/'>Index</a> | <a href=''>About Us</a> |<a href='/services'>Services</a> | <a href='/contact'>Contact Us</a></p>
+        </body>
+    </html>`;
+    response.send(str1);
+});
+app.get('/services', (request, response)=>{
+    var str1 = `
+    <html>
+        <head><title>Our Services</title></head>
+        <body>
+            <h1>Our Services</h1>
+            <p>Building Global IT Professionals since 2008<br/>
+            AN ISO 9001:2015 CERTIFIED IT LEARNING CENTER<br/>
+            Broadway Infosys Nepal is one of the best inclusive computer training institutes in Kathmandu, Nepal. Established in 2008, our professional IT Training and Development center has been employing experts in this field to impart professional education.</p>
+            <p><a href='/'>Index</a> | <a href='/about'>About Us</a> |<a href=''>Services</a> | <a href='/contact'>Contact Us</a></p>
+            </body>
+    </html>`;
+    response.send(str1);
+});
+app.get('/contact', (request, response)=>{
+    var str1 = `
+    <html>
+        <head><title>Contact Us</title></head>
+        <body>
+            <h1>Contact Us</h1>
+            <p>Building Global IT Professionals since 2008<br/>
+            AN ISO 9001:2015 CERTIFIED IT LEARNING CENTER<br/>
+            Broadway Infosys Nepal is one of the best inclusive computer training institutes in Kathmandu, Nepal. Established in 2008, our professional IT Training and Development center has been employing experts in this field to impart professional education.</p>
+            <p><a href='/'>Index</a> | <a href='/about'>About Us</a> |<a href='/services'>Services</a> | <a href=''>Contact Us</a></p>
+            </body>
+    </html>`;
+    response.send(str1);
+});
+app.get('*', (request, response)=>{
+    var str1 = `
+    <html>
+        <head><title>404 Page not found!</title></head>
+        <body>
+            <h1>404 Page not found</h1>
+        </body>
+    </html>`;
+    response.send(str1);
+});
+app.listen(8000);
+*/
+
+// Example-4- Reading contents from file
+/*
+var fs = require("fs");
+var express = require("express");
+var app = express();
+
+app.get('', (request, response)=>{
+    //reading file (async)
+    // fs.readFile('./data/index.txt', (err, data)=> {
+    //     console.log(data.toString());
+    //     response.send(data.toString()); 
+    // });
+
+    //reading file (sync)
+    var data = fs.readFileSync('./data/index.txt', 'utf-8');
+    console.log(data.toString());
+    response.send(data.toString());
+
+});
+app.get('/about', (request, response)=>{
+    //reading file (sync)
+    var data = fs.readFileSync('./data/about.txt', 'utf-8');
+    console.log(data.toString());
+    response.send(data.toString());
+});
+app.get('/services', (request, response)=>{
+    //reading file (sync)
+    var data = fs.readFileSync('./data/services.txt', 'utf-8');
+    console.log(data.toString());
+    response.send(data.toString());
+});
+app.get('/contact', (request, response)=>{
+   //reading file (sync)
+   var data = fs.readFileSync('./data/contact.txt', 'utf-8');
+   console.log(data.toString());
+   response.send(data.toString());
+});
+app.get('*', (request, response)=>{
+    //reading file (sync)
+    var data = fs.readFileSync('./data/pagenotfound.txt', 'utf-8');
+    console.log(data.toString());
+    response.send(data.toString());
+});
+app.listen(8000);
+*/
+
+//Example-5 - Reading contents from database (MySql)
+/*
+    database (create, drop, select)
+    table (create, alter, drop)
+    table data (insert, select, update, delete)
+*/
+// https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.18/
+// xampp-windows-x64-8.0.18-0-VS16.zip
+
+//Example-6 Returning HTML
+/*
+var express = require("express");
+var app = express();
+app.get('', (request, response)=>{
+    response.send(`<h1>Welcome to Broadway</h1>`);
+});
+app.listen(8000);
+*/
+
+//Example-7 Returning JSON
+/*
+var express = require("express");
+var app = express();
+app.get('', (request, response)=>{
+    objPerson = {
+        pid:1,
+        name:'broadway',
+        address:'ktm'
+    };
+    strPerson = JSON.stringify(objPerson);
+    response.send(strPerson);
+});
+app.listen(8000);
+*/
+
+//Example-8 Returning XML ?
+/*
+var express = require("express");
+var app = express();
+app.get('', (request, response)=>{
+    response.send(`
+        <person>
+            <pid>1</pid>
+            <name>broadway</name>
+            <address>ktm</address>
+        </person>
+    `);
+});
+app.listen(8000);
+*/
+
+// string to xml in node library
+// install, test, and implement
+
+// Example-9 Render HTML File (read and display)
+/*
+var express = require("express");
+var path = require("path");
+var filePath = path.join(__dirname, "example-9")
+var app = express();
+app.get('', (request, response)=>{
+    response.send(``);
+});
+app.use(express.static(filePath));
+app.listen(8000);
+// about, services, contact, pagenotfound -> render (HW)
+*/
+
+// Example-10 Render HTML File (read and display) -2
+/*
+var express = require("express");
+var path = require("path");
+
+var filePath = path.join(__dirname, "example-10")
+var app = express();
+app.get('', (request, response)=>{
+    response.sendFile(`${filePath}/index.html`);
+});
+app.get('/about', (request, response)=>{
+    response.sendFile(`${filePath}/about.html`);
+});
+app.listen(8000);
+*/
 
 
 
 
 
-// Example 2 --Multiple Request
-
-// var express = require('express')
-// var app = express()
-
-// app.get('', (req, res)=>{
-//     res.send('Index Page')
-// })
-// app.get('/about', (req, res)=>{
-//     res.send('About Us')
-// })
-// app.get('/services', (req, res)=>{
-//     res.send('Service Page')
-// })
-// app.get('/contact', (req, res)=>{
-//     res.send('contact Page')
-// })
-// app.get('*',(req,res)=>{
-//     res.status(404).send('404 :: Page not found')
-// })
-// app.listen(8000)
-
-
-
-// Example 3 HTML Contents and loading HTML file
-// var express = require('express')
-// var app = express()
-
-// app.get('', (req, res)=>{
-//     var str1 = `
-//     
-//     res.send(str1)
-// })
-// app.get('/about', (req, res)=>{
-//     var str1 = `
-    // <html>
-    // <head>
-    //     <title>About</title
-    // </head>
-    // <body>
-    //     <h1>About Page</h1>
-    //     <p> <a href="/">Index</a> </p>
-    //     <p> <a href="">About Us</a> </p>
-    //     <p> <a href="/services">Services</a> </p>
-    //     <p> <a href="/contact">Contact</a> </p>
-    //     <p>Broadway Infosys Nepal is one of the best inclusive computer training institutes in Kathmandu, Nepal. Established in 2008, our professional IT Training and Development center has been employing experts in this field to impart professional education.</p>
-    // </body>
-    // </html>`
-//     res.send(str1)
-// })
-// app.get('/services', (req, res)=>{
-//     var str1 = `
-    // <html>
-    // <head>
-    //     <title>Services</title
-    // </head>
-    // <body>
-    //     <h1>Services Page</h1>
-    //     <p> <a href="/">Index</a> </p>
-    //     <p> <a href="/about">About Us</a> </p>
-    //     <p> <a href="">Services</a> </p>
-    //     <p> <a href="/contact">Contact</a> </p>
-    //     <p>Professional IT Training leads to individuals being qualified for jobs and projects. Broadway Infosys has been providing consistent vacancy and career opportunities, in-house and external, to deserving candidates with decent salary prospects! If you are a part of us, you are a part of our facilities as well! Here are some career opportunities that you may be interested in!</p>
-    // </body>
-    // </html>`
-//     res.send(str1)
-// })
-// app.get('/contact', (req, res)=>{
-//     var str1 = `
-    // <html>
-    // <head>
-    //     <title>Contact</title
-    // </head>
-    // <body>
-    //     <h1>Contact Page</h1>
-    //     <p> <a href="/">Index</a> </p>
-    //     <p> <a href="/about">About Us</a> </p>
-    //     <p> <a href="/services">Services</a> </p>
-    //     <p> <a href="">Contact</a> </p>
-    //     <p>Shriganesh Marg, Subidhanagar, Tinkune, Kathmandu 44600, Nepal
-    //     +977-1-4117578, 4111849, 4111583
-    //     9841002000, 9808724535
-    //     info@broadwayinfosys.com
-    //     hr@broadwayinfosys.com
-    //     support@broadwayinfosys.com
-    //     inquiry@broadwayinfosys.com</p>
-    // </body>
-    // </html>`
-//     res.send(str1)
-// })
-// app.get('*',(req,res)=>{
-//     res.status(404).send('404 :: Page not found')
-// })
-// app.listen(8000)
-
-/* //hw load html file here
-app.get('/loadhtml', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html')
-})
-app.get('*', (request,response)=>{
-    response.send("404 not found");``
-});    //* except
-app.listen(8000,()=>{
-    console.log("server is started")
-}); */
-
-
-// Example 3_2 Reading content from file
-
-
-const express = require('express')
-const app = express()
-const fs = require('fs')
-
-
-app.get('', (req, res)=>{
-
-    fs.readFile(('./data/index.txt'),(err,data)=>{
-        if(!err){
-            res.send(data)
-        }else{
-            res.send(err)
-        }
-    })
-})
-app.get('/about', (req, res)=>{
-    fs.readFile(('./data/about.txt'),'utf8',(err,data)=>{
-        if(!err){
-            res.send(data)
-        }else{
-            res.send(err)
-        }
-    })
-})
-app.get('/services', (req, res)=>{
-    fs.readFile(('./data/services.txt'),'utf8',(err,data)=>{
-        if(!err){
-            res.send(data)
-        }else{
-            res.send(err)
-        }
-    })
-})
-app.get('/contact', (req, res)=>{
-    fs.readFile(('./data/contacts.txt'),'utf8',(err,data)=>{
-        if(!err){
-            res.send(data)
-        }else{
-            res.send(err)
-        }
-    })
-})
-app.get('*',(req,res)=>{
-    res.status(404).send('404 :: Page not found')
-})
-app.listen(8000)
 
 
 
 
 
-// Example 4  Reading content from database
 
-// Read from MySQL
-// Database (create, drop select)
-// Table (create, alter , drop)
-// table data(insert, select, update ,delete)
+
+
+
+
+
+
+
+
+
