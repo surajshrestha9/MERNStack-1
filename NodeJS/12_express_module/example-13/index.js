@@ -4,7 +4,9 @@
 
 var express=require('express')
 var app=express()
+app.use(express.urlencoded());//for get the value from post method
 var fs = require("fs");
+const { request } = require('http');
 var pdfLib=require("pdf-lib")
 
 app.set('view engine','ejs')
@@ -47,21 +49,6 @@ app.get('/getform1',(request,response)=>{
     // })
     
     // export result on pdf file  ->we used pdfLib
-
-    async function createPdf(data){
-        try{
-            var pdfDoc=await pdfLib.PDFDocument.create();
-            var pdfPage=pdfDoc.addPage()
-            pdfPage.drawText(strResult)
-            pdfDoc.save();
-        }
-        catch(err){
-            console.log(err)
-        }      
-    }
-    createPdf('1.pdf');
-    
-
     // export result on xml file
     // export result on INI file
 
@@ -69,10 +56,17 @@ app.get('/getform1',(request,response)=>{
     response.send(strResult);
 })
 app.post('/getform2',(request,response)=>{
-    response.send("hello")
-// get values
-// process
-// output
+    // response.send("hello")
+    // request.query ['txt1']=get method
+    console.log(request.body);
+    
+    // get values
+    let n1=Number(request.body.txt1);
+    let n2=Number(request.body.txt2);
+    // process
+    n3=n1+n2
+    // output
+    response.send("total: "+n3);
 
 // redirect o/p to file
 // redirect o/p to pdf
@@ -80,10 +74,22 @@ app.post('/getform2',(request,response)=>{
 // redirect o/p to ini
 // redirect o/p to datavbase(rdbms,nosql)
 
-})
+});
 
 
 // process them, and redirect to display on template(ejs)
-app.listen(80,()=>{
+
+app.get('/getform3/:id/:name/:address',(request,response)=>{  // /:id/:name locks key and returns value
+    // console.log(request.params)
+    // response.send(request.params);
+    var objPerson=request.params;
+    var{id,name,address}=objPerson;
+    //validation
+    // processing
+    // export (file,database,xml,ini,pdf)
+
+    response.send(`${id}, ${name}, ${address}`);
+});
+app.listen(8000,()=>{
     console.log("server is started")
 })

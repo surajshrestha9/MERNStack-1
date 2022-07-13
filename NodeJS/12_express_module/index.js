@@ -155,6 +155,58 @@ app.listen(8000);
 // https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.18/
 // xampp-windows-x64-8.0.18-0-VS16.zip
 
+// var express = require('express')
+// var app = express()
+
+// Read from MySQL
+/* var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : '127.0.0.1',
+  user     : 'root',
+  database : 'BATCH'
+});
+ 
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+ 
+  console.log('connected as id ' + connection.threadId);
+}); */
+/* connection.query('CREATE DATABASE BATCH', function (error, results, fields) {
+    if (error) throw error;
+    // connected!
+    }); */
+
+/* connection.query('CREATE TABLE Ariel(id int,name varchar(255))', function (error, results, fields) {
+    if (error) throw error;
+    // connected!
+  }); 
+connection.query("UPDATE Ariel Values(1,'suraj')", function (error, results, fields) {
+    if (error) throw error;
+    // connected!
+  }); */
+
+/* connection.query(`UPDATE Ariel
+SET name = "oos"
+WHERE id=1;`, function (error, results, fields) {
+    if (error) throw error;
+    // connected!
+  }); */
+
+/*  app.get('/database',(req,res)=>{
+    connection.query("SELECT * From Ariel", function (error, results, fields) {
+        if (error) throw error;
+        else console.log(results)
+        for (const result of  results) {
+            console.log(result.id)
+        }
+        res.send(results);
+    });
+})
+app.listen(8000) */
+
 //Example-6 Returning HTML
 /*
 var express = require("express");
