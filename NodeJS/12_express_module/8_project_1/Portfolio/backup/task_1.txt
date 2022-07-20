@@ -1,0 +1,9 @@
+form -> route (/getValues1)
+form ->method -get/post
+-getValues->get all values from form and database(save)
+
+//create our own epanel
+-login 
+-logout
+-display all queries
+-filter queries-search based on subject

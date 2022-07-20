@@ -19,10 +19,10 @@ import mysql from 'mysql';
 // Connect with database server
 
 // var conn = mysql.createConnection({host: "localhost", port: 3306, user: "root", password: ""});
-/* var conn = mysql.createConnection({host: "localhost", user: "root", password: "", database:'test'});
-//var conn = mysql.createConnection({host: "localhost", user: "root", password: ""});
 // var conn = mysql.createConnection({host: "localhost", user: "root", password: "", database:'test'});
-/*
+
+var conn = mysql.createConnection({host: "localhost", user: "root", password: ""});
+/* var conn = mysql.createConnection({host: "localhost", user: "root", password: "", database:'test'});
 conn.connect(function(err) {
     if (!err) {
         console.log("Connected!");
@@ -61,7 +61,6 @@ pool.end(function(err) {
 
 // Display all the databases of server
 
-/* var conn = mysql.createConnection({host: "localhost", user: "root",  password: "",  database: "test"});
 /*
 var conn = mysql.createConnection({host: "localhost", user: "root",  password: "",  database: "test"});
 conn.connect(function(err) {
@@ -76,11 +75,6 @@ conn.connect(function(err) {
     });
 }); */
 
-
-// Creating new table
-/* let sql = `CREATE TABLE IF NOT EXISTS persons(
-});
-*/
 
 // Create new database
 /*
@@ -122,8 +116,7 @@ let sql = `CREATE TABLE IF NOT EXISTS persons(
     address varchar(50) not null
 )`;
 var conn = mysql.createConnection({host: "localhost", user: "root",  password: "",  database: "test"});
-conn.connect(function(err) {
-    if (err) throw err;
+
     // conn.query("CREATE database dbnode", function (err, result, fields) {
     // conn.query("DROP database dbnode", function (err, result, fields) {
 
@@ -203,13 +196,6 @@ conn.connect(function(err) {
       }            
     });
 }); */
-
-
-//Update Record
-
-/* let sql = `UPDATE persons SET name=?, address=? WHERE pid=?`;
-});
-*/
 
 //Update Record
 /*
