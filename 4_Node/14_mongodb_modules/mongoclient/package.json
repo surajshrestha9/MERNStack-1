@@ -1,0 +1,28 @@
+{
+<<<<<<< HEAD
+  "name": "mongoclient",
+  "version": "1.0.0",
+  "description": "",
+=======
+  "dependencies": {
+    "mongodb": "^4.8.0"
+  },
+  "name": "mongoclient",
+  "version": "1.0.0",
+>>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+  "main": "mongo_client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+<<<<<<< HEAD
+  "dependencies": {
+    "mongodb": "^4.8.0",
+    "nodemon": "^2.0.19"
+  }
+=======
+  "description": ""
+>>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+}
