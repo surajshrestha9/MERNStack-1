@@ -1,3 +1,0 @@
-npm init -y
-npm install express --location=local
-npm install nodemon --location=global
