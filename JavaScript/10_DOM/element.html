@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT PRAC DOM</title>
+  </head>
+  <body>
+    <!-- STARTED -->
+
+    <!-- <h2>Our courses</h2>
+    <ul id="courses">
+      <li>C</li>
+      <li>C++</li>
+    </ul>
+    <button onclick="f1()">Click Me</button>
+    <button onclick="f2()">Show All</button>
+    <script>
+      function f1() {
+        //add unique item only ..homework
+        // and dont repeat the appendChild show already exit if ...
+        var item = "li";
+        var node = document.createElement(item);
+        var textnode = document.createTextNode("Java");
+        node.appendChild(textnode);
+        document.getElementById("courses").appendChild(node);
+      }
+      let items = document.querySelector("li");
+      console.log(items);
+      let f2 = () => {
+        //display all -HOMEWORK
+      };
+    </script> -->
+
+    <!-- Next ... -->
+
+    <!-- <ul id="myList1">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+    <ul id="myList2">
+      <li>Water</li>
+      <li>Milk</li>
+    </ul>
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+      function myFunction() {
+        var node = document.getElementById("myList2").lastChild;
+        document.getElementById("myList1").appendChild(node);
+      }
+    </script> -->
+
+    <!--homework ... check mylist hav value or not...if mylist has no value the alert..-->
+
+    <!-- <style>
+      
+      #div1 {
+        border: 1px solid black;
+        margin-bottom: 10px;
+      }
+    </style>
+    <div id="div1">NA</div>
+    <button onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        var para = document.createElement("P");
+        var t = document.createTextNode("This is a paragraph.");
+        para.appendChild(t);
+        document.getElementById("div1").appendChild(para);
+      }
+    </script> -->
+
+    <!-- <button onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        var x = document.createElement("P");
+        var t = document.createTextNode("This is a paragraph.");
+        x.appendChild(t);
+        document.body.appendChild(x);
+      }
+    </script> -->
+
+    <!-- <form>
+      <input
+        type="checkbox"
+        id="chk1"
+        onmouseover="f1()"
+        onclick="alert('Click on checkbox')"
+      />
+    </form>
+
+    <script>
+      function f1() {
+        document.getElementById("chk1").click();
+      }
+    </script> -->
+
+    <!-- <h2>Menu List</h2>
+    <ul id="myList">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+    <button onclick="f1()">Click Me</button>
+    <p id="p1">NA</p>
+    <script>
+      function f1() {
+        var item = document.getElementById("myList").lastElementChild.innerHTML;
+        document.getElementById("p1").innerHTML = item;
+      }
+    </script> -->
+
+    <!-- <select id="mySelect" size="4">
+      <option>Audi</option>
+      <option>BMW</option>
+      <option>Saab</option>
+      <option>Volvo</option>
+    </select>
+    <button onclick="f1()">Click Me</button>
+    <p id="p1">NA</p>
+    <script>
+      function f1() {
+        var x = document.getElementById("mySelect").lastElementChild.text;
+        document.getElementById("p1").innerHTML = x;
+      }
+    </script> -->
+
+    <!-- <style>
+      div {
+        border: 1px solid black;
+        margin: 15px;
+      }
+    </style>
+    <div id="div1">
+      <p>First Paragraph</p>
+      <span>Second Paragraph</span>
+      <p>hii</p>
+      <h2>hii</h2> 
+    </div>
+    <button onclick="myFunction()">Click Me</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var nodeName =
+          document.getElementById("div1").lastElementChild.nodeName;
+        document.getElementById("demo").innerHTML = nodeName; // -> p , span, p, h2
+      }
+    </script> -->
+
+    <!-- <style>
+      div {
+        border: 1px solid black;
+        margin: 15px;
+      }
+    </style>
+    <div id="div1">
+      <p>First Paragraph</p>
+      <span>Second Paragraph</span>
+    </div>
+    <button onclick="myFunction()">Click Me</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var tagName = document.getElementById("div1").lastElementChild.tagName;
+        document.getElementById("demo").innerHTML = tagName;
+      }
+    </script> -->
+
+    <!-- <ul>
+      <li id="item1">Book-1</li>
+      <li id="item2">Book-2</li>
+    </ul>
+    <button onclick="f1()">Click Me</button>
+    <p id="p1"></p>
+    <script>
+      function f1() {
+        var text1 =
+          document.getElementById("item1").nextElementSibling.innerHTML;
+        document.getElementById("p1").innerHTML = text1;
+      } // HOMEWORK CHECK THE NEXT ELEMENT
+    </script> -->
+
+    <!-- <ul>
+      <li id="myLI">Books</li>
+      <li>Copies</li>
+    </ul>
+
+    <button onclick="f1()">Click Me</button>
+    <p id="p1"></p>
+    <script>
+      function f1() {
+        var nodeName = document.getElementById("myLI").parentNode.nodeName;
+        document.getElementById("p1").innerHTML = nodeName;
+      }
+    </script> -->
+
+    <!-- <p id="p1">smth</p>
+    <button onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        var element = document.getElementById("p1");
+        element.parentNode.removeChild(element);
+      }
+    </script> -->
+
+    <!-- <style>
+      #class1 {
+        color: red;
+      }
+      .class1 {
+        color: blue;
+      }
+    </style>
+    <h1>Hello World</h1>
+    <h1>shiva</h1>
+    <button onclick="myFunction()">Set Class 1</button>
+    <script>
+      function myFunction() {
+        document.getElementsByTagName("H1")[0].setAttribute("id", "class1"); //attribute and value
+        document.getElementsByTagName("H1")[1].setAttribute("class", "class1");
+      }
+    </script> -->
+
+    <!-- <a id="link">MyWebsite</a>
+    <button onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        document
+          .getElementById("link")
+          .setAttribute("href", "https://bbc.co.uk");
+      }
+    </script> -->
+
+    <!-- <a id="link" href="https://bbc.co.uk" target="_blank">BBC</a>
+    <button id="btn1" onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        var x = document.getElementById("link");
+        if (x.hasAttribute("target")) {
+          x.setAttribute("target", "_self");
+        }
+      }
+    </script> -->
+
+    <!-- <h1 id="h01">Heading-1</h1>
+    <button onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        document.getElementById("h01").style.color = "red";
+      }
+    </script> -->
+  </body>
+</html>

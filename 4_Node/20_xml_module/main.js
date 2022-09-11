@@ -16,6 +16,7 @@ fs.writeFileSync(full_file_name, xml, function(err) {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // read xml file
 // update xml file
@@ -24,3 +25,7 @@ fs.writeFileSync(full_file_name, xml, function(err) {
 //read xml file (tags)
 //update xml file (tags)
 >>>>>>> b9a26d50873d3b9cdbcb5672cd2274ae5ea390df
+=======
+//read xml file (tags)
+//update xml file (tags)
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8

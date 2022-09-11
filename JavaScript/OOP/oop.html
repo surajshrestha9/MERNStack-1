@@ -1,0 +1,84 @@
+
+<!-- <script src="oop.js"> </script> -->
+<script src="myScript.js"></script>
+
+<h2>Calculator</h2>
+
+<lable>First NO:</lable>
+<input class="fnum" id="txtN1" type="number"/>
+<br><br>
+
+<lable>Second NO:</lable>
+<input class="snum" id="txtN2" type="number"/>
+<br><br>
+
+<lable>Result:</lable>
+<input class="result" id="txtResult"  type="number"/>
+<!-- <p class="result"></p> -->
+
+<br><br>
+<button class="add" onclick="calc()" >ADD</button>
+
+
+
+
+<script>
+
+
+const calc=function(){
+    //read value (num1, num2);
+    // let num1=45; //read from text box.
+    // let num1=Number(document.querySelector('.fnum').value);
+    // let num1=firstNo.value;
+    // num1=Number(num1);
+    let num1=txtN1.value;
+    // let num2=55; //read from text box.
+    // let num2=Number(document.querySelector('.snum').value);
+    // let num2=secondNo.value;
+    // num2=Number(num2);
+    let num2=txtN2.value;
+
+    let c1=new Calculator(num1, num2);
+    c1.add();
+    //set num3 on result.
+    let num3=c1.result;
+    // document.querySelector('.result').value=num3;
+    txtResult.value=num3; //look at this....--->txtResult is id of the result input.
+
+    let c2 = new calculatorV2(10,20);
+    let mc1=new myCalculator(c2);
+    mc1.sum();
+    cv2=mc1.getCalculator();
+}
+
+
+
+</script>
+
+<script>
+
+// let library = [ 
+//     {
+//         title: 'Bill Gates',
+//         author: 'The Road Ahead',
+//         readingStatus: true
+//     },
+//     {
+//         title: 'Steve Jobs',
+//         author: 'Walter Isaacson',
+//         readingStatus: true
+//     },
+//     {
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         author: 'Suzanne Collins',
+//         readingStatus: false
+//     }];
+
+//     console.log(library);
+//     library.map(el=>{
+//         console.log(el.title);
+//     })
+
+
+
+</script>

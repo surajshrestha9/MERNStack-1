@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="case2.js"></script>
+  </head>
+  <body>
+    <script>
+      //pass by reference...
+      //   let calc = {
+      //     num1: 3,
+      //     num2: 7,
+      //   };
+      //   console.log(calc);
+      //   let calcResult = process(calc);
+      //   console.log(calc);
+      //   console.log(calcResult);
+
+      //---------------------------------------------------------
+      //Advantage of pass by value... it wouldnot rewrites the value on each copyy...
+      //data value are not dublicate....
+
+      //pass by value....
+      let calc = {
+        num1: 4,
+        num2: 8,
+      };
+      console.log(calc);
+      strCalc = JSON.stringify(calc); //Object to JSON string...
+      calcResult = process(strCalc); //here strCalc.... it sends json.stringify...
+      console.log(calc);
+      //   console.log(calcResult); //here it reture json.stringify...
+      calcJson = JSON.parse(calcResult); // it receives json stringify and we need to convert to object...
+      console.log(calcJson); //here... the final result is in object
+    </script>
+  </body>
+</html>

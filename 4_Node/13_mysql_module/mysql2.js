@@ -169,6 +169,7 @@ var deleteRecord = (pid) => {
     });
 };
 
+<<<<<<< HEAD
 var showTable = () => {
     var sql = "SHOW TABLES  ";
     var con = mysql.createConnection(conn_str2);
@@ -199,6 +200,12 @@ var showTable = () => {
 // connectDBServer();
 
 // displayDatabases();
+=======
+
+// connectDBServer();
+
+displayDatabases();
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 // createDatabase('mern6');
 
 // dropDatabase('mern6');
@@ -206,6 +213,7 @@ var showTable = () => {
 
 // createTable();
 // hw -> display all the tables of database
+<<<<<<< HEAD
 var express = require('express')
 var app = express()
 app.use(express.urlencoded());
@@ -217,6 +225,11 @@ app.get('', (request, response) => {
 // CRUD
 
 // C - Create | Insert Record
+=======
+
+// CRUD
+// C - Crete | Insert Record
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 // let values = [1, 'Raj Rai', 'Kathmandu'];
 // insertRecord(values);
 
@@ -229,8 +242,15 @@ app.get('', (request, response) => {
 // updateRecord(values);
 // selectAll();
 
+<<<<<<< HEAD
 // D - Delete / Remove
 // let pid = 1;
 // deleteRecord(pid);
 // selectAll();
+=======
+// D - Delete / Remove 
+let pid = 1;
+deleteRecord(pid);
+selectAll();
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 

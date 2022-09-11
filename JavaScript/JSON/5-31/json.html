@@ -1,0 +1,73 @@
+<script>
+    // var obj1={
+        
+    // };
+    // console.log(obj1);
+    // //exampl1
+    // //adding properties
+    // try{
+    //     // obj1.add("id", 1);
+    //     obj1.id=1;
+    //     obj1.name="Broadway";
+    //     obj1.addr="Ktm";
+    //                 // console.log(obj1);  //how to add properties on object //din ma euta ques herne answer line
+    //                         // delete obj1.id
+    //                         // // obj1.sid=obj.id   //yesari hudaina
+    //                         // obj1.sid=1
+    //                 // console.log(obj1) 
+    //     //1,Broadway,ktm
+    //     console.log(obj1.id, obj1.name, obj1.addr);
+    //     console.log(obj1.id+", ", obj1.name+", ", obj1.addr);
+    //     console.log(`${obj1.id}, ${obj1.name}, ${obj1.addr}`)
+
+        
+    // }
+    // catch(ex){
+    //     console.log("error: "+ex)
+    // }
+
+   /* //exampl2
+    //nested object
+    obj2={
+        sid: 1,
+        name: 'Broadway',
+        address: 'ktm',
+        phones: {
+            res: '02103021',
+            mob: '98932894898'
+        }
+    };
+    console.log(obj2);
+    console.log(obj2.sid+", ", obj2.name+", ", obj2.address);
+    console.log(`${obj2.name}, ${obj2.phones.mob}, ${obj2.phones.res}`);
+    // console.log(`${obj2.name}, ${phones.mob}, ${phones.res}`);//phones is not defined
+*/
+    //example search mordern technique
+
+    //traversing object
+obj3={
+    id:1,
+    name:'broadway',
+    address:'ktm'
+}
+    for(key in obj3){
+        console.log(key)
+    }
+for(key in obj3){
+    console.log(obj3[key])
+}
+// console.log(Object.keys(obj3))
+// console.log(Object.values(obj3))
+
+var keys=Object.keys(obj3);  //keys is array  key is one
+// console.log(keys);
+
+// for (var i=0; i<keys.length; i++){
+//     console.log(obj3[keys[i]])
+// }
+for(key in keys){
+    console.log(keys);
+}
+
+    //2weeks sending receivin with javascript in esewa   js ko api banaune
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <h2>New calculator</h2>
+    <p> firstno:  <input type="text" id="txtN1"></p>
+    <p> secondno: <input type="text" id="txtN2"></p>
+    <!-- <p> result: <input type="text" id="txtResult"></p>      general html lai inner html use garna mila input type jasto lai mildaina -->
+    <p> result: <input type="text" id="txtResult"></p>      <!-- general html lai inner html use garna mila input type jasto lai mildaina -->
+    <p> <input type="button" value="add" onclick="calc()"></p>
+    <script src="myscript.js"></script>
+    <script>
+        var calc=function(){
+            // window.alert("Hello");
+            //read values of num1 and num2
+            var num1=Number(txtN1.value);    //read from textbox   //parseInt or number use//input becomes nan if string value
+            console.log(num1)
+            var num2=Number(txtN2.value);    //read from textbox
+            var c1=new calculator(num1,num2);
+            c1.sum();
+            // set num3 on result
+            var num3= c1.result;
+            // window.alert(num3);
+            // document.getElementById("txtResult").innerHTML=num3;
+            // document.getElementById("txtResult").value=num3;
+            txtResult.value=num3;
+           
+            // how to set values on webform control ie textboc
+
+        }
+    </script>
+</body>
+</html>
+
+<!-- 1.add clck should be identified
+2.read values of num1 and num2 -->

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+</head>
+
+<body>
+    <div class="calc">
+        <div class="calc-content">
+            <h2 style="text-align: center;">Calculator</h2>
+            <p class="input-item"> <span> FirstNo:</span>
+                <input class="input-input" type="text" placeholder="enter first number" id="test1">
+            </p>
+            <p class="input-item"><span> SecondNo:</span>
+                <input class="input-input" type="text" placeholder="enter second number" id="test2">
+            </p>
+            <p class="input-item"><span> Result:</span>
+                <input class="input-input" type="text" id="textResult">
+            </p>
+            <div class="btn-box">
+                <input class="btn" type="button" value="ADD" onclick="calc()">
+                <!-- <input class="btn" type="button" value="ADD" onclick="calculatorV2(num1,num2)"> -->
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="c1.js"></script>
+<script>
+    /* simple calculator
+    var calc = function () {
+        // var num1 = 59;
+        //var num2 = 72;
+        // document.querySelector("test1").value = num1;
+        //document.querySelector("test2").value = num2;
+        //window.alert("Job performed")
+        //read values of (num1,and num2)
+        var num1 = test1.value;
+        num1 = Number(num1);
+        var num2 = test2.value;
+        num2 = Number(num2);
+        // var num2 = number(prompt(""));//read from text box
+        var c1 = new calculator(num1, num2);
+        c1.add();
+        //set num3 on result
+        var num3 = c1.result;
+        // window.alert(num3);
+        textResult.value = num3;
+        //how to set value on webform control i.e txtbox
+
+    }*/
+
+    function calc(){
+
+    var num1 = test1.value;
+    num1 = Number(num1);
+    var num2 = test2.value;
+    num2 = Number(num2);
+    var calc2 = new calculatorV2(num1, num2);
+    var mc2 = new myCalculator(calc2);
+    console.log(mc2);
+    mc2.sum();
+    console.log(mc2);
+
+    }
+    // var mc2 = new myCalculator(calc2);
+    // mc2.sum();
+    // calc2 = mc2.getCalcV2();
+    // textResult.value = calc2.getNum3();
+    // mc2.getNum3(tmpResult)=num;
+    //document.getElementById("textResult").value = num3;
+
+
+
+</script>
+
+</html>

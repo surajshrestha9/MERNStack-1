@@ -1,15 +1,28 @@
 {
+<<<<<<< HEAD
   "name": "mvc_2",
+=======
+  "name": "5_mvc",
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "dev": "nodemon index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type":"module",
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   "dependencies": {
     "express": "^4.18.1"
   }

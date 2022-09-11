@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { insertRecord, getAll } from "../databases/mongo_client.js";
 
 var homeController =  (request, response) => {
@@ -26,6 +27,8 @@ var saveController = (request, response) => {
     else{
         response.send('error to send record')
 =======
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 import { insertRecord, getAll } from '../databases/mongo_client.js';
 
 var homeController = (request, response) => {
@@ -54,7 +57,10 @@ var saveController = (request, response) => {
     }
     else {
         response.send('Error to save record.');
+<<<<<<< HEAD
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
     }
 };
 

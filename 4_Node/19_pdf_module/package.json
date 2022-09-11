@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD:NodeJS/dynamic_contents/pub-1/package.json
     "ejs": "^3.1.8",
     "express": "^4.18.1",
@@ -17,5 +18,8 @@
 =======
     "pdfkit": "^0.13.0"
 >>>>>>> eb2980a14fd387740ee298e282c7e5cad31eba41:NodeJS/19_pdf_module/package.json
+=======
+    "pdfkit": "^0.13.0"
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   }
 }

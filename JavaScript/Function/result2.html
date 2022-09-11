@@ -1,0 +1,40 @@
+<script src="result2.js"></script>
+<script>
+    var sid=6;
+    var name="Suraj";
+    var standard="BCT";
+    var sub1=87;
+    var sub2=54;
+    var sub3=56;
+    var sub4=65;
+    // send values,calculate totla av g result and grade
+    // fxn expression , arrow fxn as more as poassible
+    var result=process(sid,name,standard,sub1,sub2,sub3,sub4);  //argument ->call and sending value to js
+    // document.write("ID: "+result);
+    document.write("ID: "+sid+"<br/>")
+    document.write("NAME: "+result.stu_name+"<br/>");
+    document.write("STANDARD: "+result.stu_standard+"<br/>");
+    document.write("SUB-1: "+sub1+"<br/>");
+    // document.write("TOTAL: "+calcTotal(sub1,sub2,sub3,sub4)+"<br/>");
+    document.write("TOTAL: "+result.stu_total+"<br/>");
+    document.write("AVERAGE: "+result.stu_avg+"<br/>");
+    document.write("RESUlT: "+result.stu_result+"<br/>");
+    document.write("grade: "+result.stu_grade+"<br/>");
+    // document.write("ID: "+result.stu_id+"<br/>")
+    // document.write("NAME: "+result.stu_name+"<br/>");
+    // document.write("STANDARD: "+result.stu_standard+"<br/>");
+    // document.write("SUB-1: "+sub1+"<br/>");
+    // // document.write("TOTAL: "+calcTotal(sub1,sub2,sub3,sub4)+"<br/>");
+    // document.write("TOTAL: "+result.stu_total+"<br/>");
+    // document.write("AVERAGE: "+result.stu_avg+"<br/>");
+    // document.write("RESUlT: "+result.stu_result+"<br/>");
+    // document.write("grade: "+result.stu_grade+"<br/>");
+
+    // var count=0;
+    // for (key in result){
+        //     if(result.hasOwnProperty(key))
+        //         count++;
+        // }
+        // var object_length=count;
+        // document.write("length of object: "+object_length);
+    </script>

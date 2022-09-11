@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // download and install mongodb
 // download and install mongosh
 show dbs
@@ -86,6 +87,8 @@ mydb > dn.persons.deleteOne({_id:ObjectId("61........")});
 # Delete Record -3
 mydb > dn.persons.deleteMany({_id:ObjectId("61........")});
 =======
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 Database Management
 use < database_name >
 
@@ -165,4 +168,7 @@ db.person.deleteOne({pid:3})
 
 
 
+<<<<<<< HEAD
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8

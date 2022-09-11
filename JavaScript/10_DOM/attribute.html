@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT DOM ATTRIBUTE</title>
+  </head>
+  <body>
+    <!-- <button onclick="f1()" value="btn1">Click Me</button>
+    <button onclick="f1()" value="btn2">Click Me2</button>
+    <p id="demo"></p>
+    <script>
+      function f1() {
+        var a = document.getElementsByTagName("BUTTON")[0]; // check elements ...
+        var x = a.attributes.getNamedItem("onclick").value;
+        // var x = a.attributes.getNamedItem("value").value;
+
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script> -->
+
+    <!-- <style>
+      .example {
+        color: red;
+        padding: 5px;
+        width: 150px;
+        font-size: 15px;
+      }
+    </style>
+    <button onclick="myFunction()" class="example">Click Me</button>
+    <p id="demo">NA</p>
+    <script>
+      function myFunction() {
+        var a = document.getElementsByTagName("BUTTON")[0];
+        var x = a.attributes.item(1).name; //class
+        // var x = a.attributes.item(0).name; // onclick
+
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script> -->
+
+    <!-- <input type="button" value="OK" />
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+      function myFunction() {
+        var btn = document.getElementsByTagName("INPUT")[0];
+        btn.attributes.removeNamedItem("type");
+      }
+    </script> -->
+
+    <!-- <button id="myBtn" onclick="myFunction()">Click Me</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myBtn").attributes.length;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script> -->
+  </body>
+</html>

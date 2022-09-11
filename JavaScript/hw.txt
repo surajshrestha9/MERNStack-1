@@ -1,0 +1,7 @@
+object is used for the general case eg heading of website
+
+if the content of pages are different for each pages the use instance of classes
+
+homework:
+
+make one script fule and create object abd make different html files

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT DOM PRACTICE</title>
+  </head>
+  <body>
+    <!--    1.     -->
+
+    <!-- <ul class="item">
+      <li>TEA</li>
+      <li>coffee</li>
+    </ul>
+    <button id="btn">ADD ITEM</button>
+    <script>
+      let itemList = document.querySelector(".item");
+      let button = document.querySelector("#btn");
+
+      let addItem = () => {
+        let item = "li";
+        let node = document.createElement(item);
+        let textNode = document.createTextNode("BEER");
+        node.appendChild(textNode);
+        itemList.appendChild(node);
+      };
+      button.addEventListener("click", addItem);
+    </script> -->
+
+    <!--    2.     -->
+
+    <!-- <ul class="list1">
+      <li>TEA</li>
+      <li>COFFEE</li>
+    </ul>
+    <ul class="list2">
+      <li>WINE</li>
+      <li>BEER</li>
+    </ul>
+    <button class="btn">Move</button>
+    <script>
+      let list1 = document.querySelector(".list1");
+      let list2 = document.querySelector(".list2");
+      //   console.log(list1.lastElementChild.innerHTML); // COFFEE
+      let button = document.querySelector(".btn");
+      let move = () => {
+        let totalList2Items = [];
+        let children = list2.children;
+        for (let i = 0; i < children.length; i++) {
+          // console.log(children[i].innerHTML);
+          totalList2Items.push(children[i].innerHTML);
+        }
+        let node = list2.lastElementChild;
+        console.log(totalList2Items);
+        let check = totalList2Items.includes(node.innerHTML);
+        console.log(check);
+        if (check) {
+          // list1.appendChild(node);
+          list1.appendChild(node);
+        } else {
+          alert("there is no item in last");
+        }
+      };
+      button.addEventListener("click", move);
+    </script> -->
+
+    <!-- <div class="demo">SMTH</div>
+    <button class="btn">CLICK</button>
+    <script>
+      let button = document.querySelector(".btn");
+      let demo = document.querySelector(".demo");
+      let process = () => {
+        let para = document.createElement("p");
+        let pText = document.createTextNode("This is a paragraph");
+        para.appendChild(pText);
+        demo.appendChild(para);
+      };
+      button.addEventListener("click", process);
+    </script> -->
+
+    <!-- <button class="btn">CLICK</button>
+    <script>
+      let button = document.querySelector(".btn");
+      let process = () => {
+        let p = document.createElement("p");
+        let pText = document.createTextNode("SHIBU CHAPAGAIN");
+        p.appendChild(pText);
+        document.body.appendChild(p);
+      };
+      button.addEventListener("click", process);
+    </script> -->
+
+    <!-- <form>
+      <input
+        type="checkbox"
+        value="click"
+        class="btn"
+        onmouseover="fun1()"
+        onclick="alert('you just click on this button')"
+      />
+      <script>
+        function fun1() {
+          document.querySelector(".btn").click();
+        }
+      </script>
+    </form> -->
+
+    <!-- <ul>
+      <li class="list1">TEA</li>
+      <li class="list2">COFFEE</li>
+      <li class="list3">BEER</li>
+    </ul>
+    <button class="btn">CLICK</button>
+    <script>
+      let button = document.querySelector(".btn");
+      let text = document.querySelector(".list1").nextElementSibling;
+      text = [text];
+      // console.log(text); //coffee
+      for (i in text) {
+        console.log(i);
+      }
+    </script> -->
+
+    <!-- <p class="p">HII, GUYS</p>
+    <button class="btn" onclick="fun()">CLICK</button>
+    <script>
+      function fun() {
+        let element = document.querySelector(".p");
+        console.log(element);
+        console.log(element.parentElement);
+        console.log(element.parentNode);
+        element.parentNode.removeChild(element);
+      }
+    </script> -->
+
+    <!-- <style>
+      .btn {
+        color: green;
+      }
+    </style>
+    <h2>SHIVA CHAPAGAIN</h2>
+    <h2>KRISHNA CHAPAGAIN</h2>
+    <script>
+      let header = document.getElementsByTagName("h2")[0];
+      let head = document.getElementsByTagName("h2")[1];
+
+      header.setAttribute("class", "btn");
+      head.setAttribute("class", "btn");
+      console.log(header);
+    </script> -->
+
+    <!--                            ATTRIBUTE                              -->
+    <!-- <button class="btn" onclick="fun()" value="CHECK" />
+    <script>
+      let a = document.getElementsByTagName("button")[0];
+      // console.log(a);
+      // let x = a.attributes.getNamedItem("onclick").value;
+      // console.log(x);
+      let y = a.attributes.item(0).name;
+      let z = a.attributes.item(1).value;
+      console.log(z);
+      console.log(y);
+    </script> -->
+
+    <!-- <input type="button" value="CLICK" />
+    <script>
+      let a = document.getElementsByTagName("input")[0];
+      console.log(a);
+      a.attributes.removeNamedItem("type");
+      console.log(a);
+    </script> -->
+
+    <!-- <input type="button" value="CLICK" />
+    <script>
+      let a = document.getElementsByTagName("input")[0];
+      console.log(a);
+      console.log(a.attributes.length);
+    </script> -->
+
+    <!--                              TASK    -->
+    <ul id="myList1">
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+    <ul id="myList2">
+      <!-- <li>Water</li> -->
+      <li>Milk</li>
+    </ul>
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+      function myFunction() {
+        // var node = document.getElementById("myList2").lastChild;
+        // console.log(node);
+        // // document.getElementById("myList1").appendChild(node);
+        // let node = document.getElementById("myList2").lastElementChild;
+        let node = document.getElementById("myList2").lastChild;
+        console.log(node);
+        console.log(node.innerHTML != "");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result Generator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
+<body>
+    <div class="calc">
+        <div class="calc-content">
+            <h2 style="text-align: center;">ResultSheet</h2>
+            <p class="input-item"> <span>Student ID:</span>
+                <input class="input-input" type="text" placeholder="Enter Student ID" id="stdid">
+            </p>
+            <p class="input-item"> <span>Student Name:</span>
+                <input class="input-input" type="text" placeholder="Enter Student Name" id="stdname">
+            </p>
+            <p class="input-item"> <span>Student Class:</span>
+                <input class="input-input" type="text" placeholder="Enter Student class" id="std1">
+            </p>
+            <p class="input-item"> <span> Subject1:</span>
+                <input class="input-input" type="text" placeholder="Enter Subject1 Mark" id="mark1">
+            </p>
+            <p class="input-item"><span> Subject2:</span>
+                <input class="input-input" type="text" placeholder="Enter Subject2 Mark" id="mark2">
+            </p>
+            <p class="input-item"><span> Subject3:</span>
+                <input class="input-input" type="text" placeholder="Enter Subject3 Mark" id="mark3">
+            </p>
+            <p class="input-item"><span> Total:</span>
+                <input class="input-input" type="text" id="textResult">
+            </p>
+            <div class="btn-box">
+                <input class="btn" type="button" value="PROCESS" onclick="proc()">
+                <!-- <input class="btn" type="button" value="ADD" onclick="calculatorV2(num1,num2)"> -->
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script defer src="day17.js"></script>
+<script>
+    function proc() {
+        let sid = stdid.value;
+        var fullname = stdname.value;
+        var std = std1.value;
+        var sub1 = mark1.value;
+        var sub2 = mark2.value;
+        var sub3 = mark3.value;
+        sub1 = parseInt(sub1);
+        sub2 = parseInt(sub2);
+        sub3 = parseInt(sub3);
+        var res1 = new student(sub1, sub2, sub3);
+        //console.log(res1);
+        var ms1 = new processStudent(res1);
+        console.log(ms1)
+        /* ms1.calcTotal();
+         res1 = ms1.getStudent1();
+         textResult.value = res1.getTotal();
+         console.log(res1);*/
+    }
+</script>

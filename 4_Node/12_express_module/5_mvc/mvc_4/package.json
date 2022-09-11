@@ -1,16 +1,31 @@
 {
+<<<<<<< HEAD
   "name": "mvc_3",
   "version": "1.0.0",
+=======
+  "name": "mvc_4",
+  "version": "1.0.0",
+  "description": "",
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app"
   },
+<<<<<<< HEAD
   "author": "",
   "license": "ISC",
   "type": "module",
   "keywords": [],
   "description": "",
   "dependencies": {
+=======
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.8",
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
     "express": "^4.18.1"
   }
 }

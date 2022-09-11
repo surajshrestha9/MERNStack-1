@@ -1,0 +1,111 @@
+<script>
+
+/* 
+function f1(){}
+function f1(num1){}
+function f1(num1,num2){}
+
+// var result=fxn(6,7)  Argumnets
+document.alert(result);
+
+// var or let result=width*height ;
+//   return result
+
+
+//   fxn keyword
+//   fxn name
+//   parameters
+//   body of the fxn inside Braces
+//   return statement
+
+
+// Input ui bata naline
+// parameter throw garne ani fxn ma parameter rakhne
+
+// return for output which shows in ui
+
+
+
+
+variable scope and lifetime
+
+Global scope   scope is visiblity  existence chai lifetime
+local scope
+
+garbage collector-automatically remove unsued variable-java virtual machine
+
+ECMA
+ECS6 */
+
+
+<script>
+    var name="Broadway";  //global
+    function f1(){
+        console.log(name);
+     }
+    function f2(){
+        var address="KTM";//LOCAL
+        console.log(name);//global
+        console.log(address);
+    }
+    function f3(){
+        var email="info@Broadway.com.np";//LOCAL
+        console.log(name);//global
+        console.log(email);//global
+        console.log(address);//private or loacal of f2
+    }
+
+    f1();
+    f2();
+    f3();
+    //  default parameter //polymorphism
+        // function f5(num1=0, num2=0)
+        //     return num1+num2;
+    
+        // expression fxn
+        var var6=function f6(num1,num2){
+            return num1+num2;
+        }
+        // annonymous fxn
+        var prd=function(num1,num2){
+            return num1*num2;
+        }
+        //Arrow funxtion   one line fxn
+        
+        var sum2 = (num1,num2) => num1+num2;
+    
+        //multiline array fxn
+        var sum3 = (num1,num2) => {
+            var var3=num1+num2;
+            return var3
+        }
+    
+        function f10(...args){    //... should be exactly 3
+            console.log(args);      //args as an array
+            console.log(args.length)
+            //to find length of arguments
+            var sum=0
+            for(let i=0;i<args.length;i++){
+                sum+=args[i];
+            }
+            return sum;
+            }
+        f10(1);
+        f10(1,4);
+        var v10 = f10(1,4,999);
+        console.log(v10);
+</script>
+
+
+// <script>
+//     // var var6=sum(5,6);  //sum is the fxn pointer to f6
+//     // console.log(prd(5,6));
+//     var var7=prd (5,7)
+//     var var8= sum2(5,7)
+//     console.log(var7)
+//     console.log(sum2(3,4))
+//     console.log(var8)
+
+//     console.log(sum3(9,5))
+
+// </script>

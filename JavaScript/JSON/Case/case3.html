@@ -1,0 +1,35 @@
+<script src="case3.js"></script>
+<!-- <script>
+    obj1={
+        id:1,
+        name:'raj'
+    }
+    console.log(obj1);
+
+    f1(obj1);
+    console.log(obj1);
+
+    f2(obj1);
+    console.log(obj1);
+
+    var obj2=f2(obj1);
+    console.log(obj2);
+</script> -->
+<script>
+    // object to json 
+    //json to object
+
+    const person={
+        id:1,
+        name:'raj thpa',
+        age: 25
+    };
+
+    const jsonPerson=JSON.stringify(person);
+    console.log(person);
+    console.log(jsonPerson);
+
+    const objPerson=JSON.parse(jsonPerson)
+    console.log(person);
+    console.log(objPerson)//json lai same object ma convert vayo
+</script>

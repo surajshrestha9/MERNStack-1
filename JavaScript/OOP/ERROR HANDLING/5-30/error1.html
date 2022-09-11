@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="message">NA</div>
+    <div id="message2">NA</div>
+    <script src="script.js"></script>
+    <!-- <script>
+        try{
+            
+            var result= sum(10,20); //sum is not defined yet
+            //after defining sum function  try block runs
+            document.getElementById("message").innerHTML=result;
+        }
+        catch(ex){  //ex ma ako message system error
+            document.getElementById("message").innerHTML=ex;
+            //before  defining sum function  catch block runs
+        }
+        finally{
+            //end  
+            document.getElementById("message2").innerHTML="finally block is executed"
+        }
+    </script> -->
+    
+    
+    <!-- 2nd way -->
+    <!-- <script>
+            try{
+            var result= sum(10,20); //sum is not defined yet
+            //after defining sum function  try block runs
+            
+            document.getElementById("message").innerHTML=result;
+            
+            throw "Error occured";//validation// throw le direct catch ma send garcha
+        }
+        catch(ex){
+            alert (ex);
+        }
+    </script> -->
+    <script>
+        //declare
+        var num1=null; //global variable
+        var num2=null;
+        var num3=null;
+        try{
+            //input process output
+            num1=56;
+            num2=4;
+            num3=num1/num2;
+            console.log(typeof num3)
+            if((typeof num3)!='number'){
+                throw "not a number";
+            }
+            console.log("Result: "+num3);
+        }
+        catch(ex){
+            console.log("Error: "+ex);
+        }
+        finally{
+            num1=null;
+            num2=null;
+            num3=null;
+            console.log("end");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<script>
+    // const person={
+    // id:1,
+    // name: 'raj thapa',
+    // age:25,
+    // address:{
+    //     tole:'jamal',
+    //     ward:1,
+    //     mpc:'KTM',
+    //     district:'KTM',
+    // },
+    // };
+    // console.log(`${person.id},${person.name},${person.age},${person.address.tole},${person.address.ward},${person.address.mpc},${person.address.district}`);
+
+    // //destructing
+    // var {pid,name,age, address}=person;
+    // console.log(pid,name,age, address);
+    // var{tole,ward,mpc,district}=address;
+    // console.log(tole,ward,mpc,district)
+    
+//example1
+    //cloning
+    const person={
+        id:1,
+        name:'raj thapa',
+        age:25,
+    };
+    // var tmpPerson=person;   //copy by reference
+
+    // tmpPerson.id=2;         //copy by reference
+    // console.log(person)
+    
+    
+//example2
+    // var tmpPerson2={
+        
+    // };
+    // tmpPerson2.id=person.id,
+    // tmpPerson2.name=person.name,
+    // tmpPerson2.age=person.age,
+
+    
+    // console.log(tmpPerson2);
+    // console.log(person)
+
+    // tmpPerson2.id=3     //copy by value
+    // console.log(tmpPerson2)
+    // console.log(person)
+
+//example 3
+    // const tmpPerson3={};
+        // for(let key in person){
+        //     tmpPerson3[key]=person[key];
+        // }
+    // console.log(person);
+    // console.log(tmpPerson3);
+    // tmpPerson3.id=4
+    // console.log(person);
+    // console.log(tmpPerson3);
+//example 4
+    const tmpPerson4=Object.assign({},person);
+   console.log(person);
+    console.log(tmpPerson4);
+    tmpPerson4.id=4
+    console.log(person);
+    console.log(tmpPerson4);
+    
+
+    
+
+</script>

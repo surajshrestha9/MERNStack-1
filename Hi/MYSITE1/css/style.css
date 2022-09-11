@@ -1,0 +1,11 @@
+body {
+  padding: 0.5rem;
+  background-color: rgb(192, 182, 170);
+}
+h2 {
+  color: green;
+}
+p {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}

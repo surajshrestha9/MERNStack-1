@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT ARRAY</title>
+    <script defer src="array.js"></script>
+  </head>
+  <body>
+    <h2>JAVASCRIPT ARRAY</h2>
+    <!-- 
+      <script>
+    // var arr=[1,2,3,5,6,7]
+    // console.log(typeof arr)
+    // console.log(arr)
+    // arr[0]=23
+    // console.log(arr)
+    // delete arr1[0];
+    
+    
+    //traversing in array
+    // arr1 = new Array(2,4,5,6,7,8,9,1,2,4,3,7,6,3,8,6,4,9,1,5,6,9,3,4,7,5,6,4,2);
+    // for(let i=0;i<=arr1.length-1;i++){
+    //     console.log(arr1[i])
+    // }
+
+    //calculate the sum,average
+
+    // var sum=0;
+    // for(i=0;i<=arr1.length-1;i++){
+    //     sum=sum+arr1[i];
+    // }
+    // console.log(sum);
+    // var average=sum/arr1.length;
+    // console.log(average);
+
+    //calculate min and max element
+    // arr1 = new Array(2,4,5,6,7,8,9,1,2,4,3,7,6,3,8,6,4,9,1,5,6,9,3,4,7,5,6,4,2);
+    // var min=arr1[0];
+    // var max=arr1[0];
+    // for(i=0;i<=arr1.length-1;i++){
+    //     if(arr1[i]>max){
+    //         max=arr1[i];
+    //     }
+
+    //     if(arr1[i]<min){
+    //         min=arr1[i]
+            
+    //     }
+
+
+    // }
+    // console.log(min);
+    // console.log(max);
+    
+
+
+    //search a number in array
+    /*   
+    arr1 = new Array(2,4,5,6,7,8,9,1,2,4,3,7,6,3,8,6,4,9,1,5,6,9,3,4,7,5,6,4,2);
+
+        num1=prompt("enter any number: ");
+        flag=false;
+
+        for(let i=0; i<=arr1.length-1;i++){
+            if(num1==arr1[i]){
+                console.log(`${num1} is found in index ${i}`)
+                flag=true;
+                //break;  //it will find only one matching value
+            }
+
+        }
+        
+        if(!flag){
+            console.log(`${num1} not found `);
+        }
+
+    */
+       
+    //search-2 :::output-> 3 found at [1,4] - 2 times
+   /*
+    var arr1 = new Array(2,4,5,6,7,8,9,1,2,4,3,7,6,3,8,6,4,9,1,5,6,9,3,4,7,5,6,4,2);
+    var arr2= new Array();
+    result=false;
+
+    num1=prompt("enter any number: ");
+    for(i=0;i<=arr1.length-1;i++){
+        if(num1==arr1[i]){
+            arr2.push(i)
+            result=true;
+        }
+    }
+
+    if(!result){
+        console.log(`${num1} is not found`);
+    }
+
+    else{
+        console.log(`${num1} found in ${arr2} index - ${arr2.length} times`)
+    }
+
+    */
+
+    //sorting the array
+    // var arr1 = new Array(2,4,5,6,7,8,9,1,2,4,3,7,6,3,8,6,4,9,1,5,6,9,3,4,7,5,6,4,2);
+
+
+    /*
+    var arr1= new Array(5,3,2,4,5,6,7,4,3,4,5,6,4);
+    // example 5
+    for(let index in arr1){    //for in loop returns index from array
+        console.log(index);   //returns index value
+        // console.log(arr1[index]); //returns value
+     }
+     
+     //  example 6
+     for(let item of arr1){//returns element->value
+        console.log(item);
+    }
+    
+    // example 7
+    arr1.forEach(function(element){  //for of and for each can access
+        console.log(element);
+    })
+    //example 8
+    arr1.forEach((number,index) => {
+        console.log(`the index is ${index}      value :${number}`)       
+    });
+    */
+    
+// methods
+/*
+// Array.at()->element
+//  at(index)->element
+var arr1= new Array(3,5,6,7,8)
+console.log(arr1.at(3))
+
+for(let i=0; i<=arr1.length-1;i++){
+    console.log(arr1.at(i))
+}
+for (index in arr1){
+    console.log(index)
+}
+for(let item of arr1){
+    console.log(item);
+}
+
+arr1.forEach(function(element){  
+    console.log(element);
+})
+arr1.forEach((number,index) => {
+    console.log(`the index is ${index}      value :${number}`)       
+});
+// array.concat()
+// concat()->array
+var a = new Array(1,2,3,4,5,6)
+a=a.concat(0,6,7,7)
+console.log(a)
+// array.copywithin()
+// array.copywithin(target)
+var arr = new Array(1,2,3,4,5,6)
+var arr= arr.copyWithin(0,2, arr.length-1)
+console.log(arr)
+
+// arr.entries
+var arr= new Array(3,5,6,7,8);
+var result=arr.entries();
+console.log(result)
+console.log(result.next())  //(0,3)
+console.log(result.next().value)
+//for
+// for of
+// for in
+// forEach
+// forEach=>
+
+// array.every()
+// arrow function
+// every((element)=>{...})
+// every((element,index)=>{...})
+// every((elementindex,array)=>{...})
+
+var grade=(currentValue)=>currentValue<40     //like and gate
+// var grade=(currentValue)=>currentValue>40
+var arr1=[1,30,39,29,10,13,42]
+console.log(arr1.every(grade))
+
+// Array.prototype.fill()->array, filled with value.
+// fill(value)
+// fill(value, start)
+// fill(value, start, end)
+var arr1=[1,30,39,29,10,13];
+console.log(arr1)
+arr1=arr1.fill(5,2);   //start  value thapyo
+console.log(arr1)
+arr1=arr1.fill(5,2,4);   //start ra end index ma value thapyo
+console.log(arr1)
+
+// Array.prototype.filter()->
+// // Arrow function
+// filter((element) => {  ...} )
+// filter((element, index) => {  ...  } )
+// filter((element, index, array) => { ...  } )
+var arr1=[1,30,39,29,10,13,2,5,4];
+var arr1_1=arr1.filter(item=>item==5)
+// var arr1_1=arr1.filter(item=>item<6)
+// var arr1_1=arr1.filter(item=>item>6)
+console.log(arr1_1)
+
+// Array.prototype.find()
+var arr1=[1,30,39,29,10,13,42]
+// find((element) => { } )
+// find((element, index) => { } )
+// find((element, index, array) => { } )
+
+console.log(arr1.find(e => e%2)==0);
+// Callback function
+find(callbackFn)
+find(callbackFn, thisArg)
+
+// Inline callback function
+find(function(element) {  })
+find(function(element, index) {  })
+find(function(element, index, array){  })
+find(function(element, index, array) {  }, thisArg)
+
+// Array.prototype.findIndex()
+// Arrow function
+// findIndex((element) => {  } )
+// findIndex((element, index) => {  } )
+// findIndex((element, index, array) => {  } )
+
+// // Callback function
+// findIndex(callbackFn)
+// findIndex(callbackFn, thisArg)
+
+// // Inline callback function
+// findIndex(function(element) {  })
+// findIndex(function(element, index) {  })
+// findIndex(function(element, index, array){  })
+// findIndex(function(element, index, array) {  }, thisArg)
+*/
+
+// Array.prototype.flat()=> new array with sub array
+// flat()
+// flat(depth)
+
+// var arr1 = [1, 2,30,14,15, [3, 4]];
+// console.log(arr1.flat());
+
+// Array.prototype.flatMap()
+// // Arrow function
+// flatMap((currentValue) => { /* ... */ } )
+// flatMap((currentValue, index) => { /* ... */ } )
+// flatMap((currentValue, index, array) => { /* ... */ } )
+var arr1 = [1, 2,30,14,15, 3, 4];
+console.log(arr1.flatMap(x=>[x*2] ));
+
+// // Callback function
+// flatMap(callbackFn)
+// flatMap(callbackFn, thisArg)
+
+// // Inline callback function
+// flatMap(function(currentValue) { /* ... */ })
+// flatMap(function(currentValue, index) { /* ... */ })
+// flatMap(function(currentValue, index, array){ /* ... */ })
+// flatMap(function(currentValue, index, array) { /* ... */ }, thisArg)
+
+console.log(Array.from('Kathmandu, Nepal'));//converts string to array
+console.log(typeof Array.from('Kathmandu, Nepal'));
+
+</script>
+     -->
+  </body>
+</html>

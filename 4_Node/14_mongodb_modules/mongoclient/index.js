@@ -1,13 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // npm install mongodb
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+// npm install mongodb
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 var mongoClient = require('mongodb').MongoClient;
 
 var databaseName = 'mern10'
 var url = `mongodb://localhost:27017/${databaseName}`;
 
 //Creating new database or use existing database
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 /*  mongoClient.connect(url, function (err, db) {      //terminal ma use <DBName> gareko
@@ -24,6 +29,8 @@ var collectionName = 'person';
   if (err) throw err;
   var dbo = db.db("databaseName");     //select database//use databasename jasto ho
 =======
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 /*
 mongoClient.connect(url, function (err, db) {
   if (err) throw err;
@@ -38,12 +45,16 @@ var collectionName = 'persons';
 mongoClient.connect(url, function(err, db) {
   if (err) throw err;
   var dbo = db.db(databaseName);//select database //use databasename
+<<<<<<< HEAD
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   dbo.createCollection(`${collectionName}`, function(err, res) {
     if (err) throw err;
     console.log("Create new collecton successfully!");
     db.close();
   });
+<<<<<<< HEAD
 <<<<<<< HEAD
 }) */
 
@@ -52,13 +63,18 @@ mongoClient.connect(url, function(err, db) {
 
 /* mongoClient.connect(url, function(err, db) {
 =======
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 });
 */
 
 // Drop collection
 /*
 mongoClient.connect(url, function(err, db) {
+<<<<<<< HEAD
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   if (err) throw err;
   var dbo = db.db(databaseName);
   dbo.dropCollection(collectionName, function(err, delOK) {
@@ -66,6 +82,7 @@ mongoClient.connect(url, function(err, db) {
     if (delOK) console.log("Delete collection successfully");
     db.close();
   });
+<<<<<<< HEAD
 <<<<<<< HEAD
 }); */
 
@@ -79,6 +96,8 @@ mongoClient.connect(url, function(err, db) {
   // var myobj = { name: "Kiran Thapa", address: "Bhk" };
   // var myobj = { name: "Rojina ", address: "Bhk" };
 =======
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 });
 */
 
@@ -89,12 +108,16 @@ mongoClient.connect(url, function(err, db) {
   // var myobj = { name: "Raj Rai", address: "Ktm" };
   // var myobj = { name: "Kiran Thapa", address: "Lat" };
   var myobj = { name: "Rojina ", address: "Bhk" };
+<<<<<<< HEAD
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   dbo.collection(`${collectionName}`).insertOne(myobj, function(err, res) {
     if (err) throw err;
     console.log("Document insert successfully");
     db.close();
   });
+<<<<<<< HEAD
 <<<<<<< HEAD
 }); */
 // Insert Record-2
@@ -109,6 +132,8 @@ mongoClient.connect(url, function(err, db) {
   ]
   dbo.collection(`${collectionName}`).insertMany(myobjs, function (err, res) {
 =======
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 });
 
 // Insert Record-2
@@ -121,12 +146,16 @@ mongoClient.connect(url, function(err, db) {
       { name: "Rojina ", address: "Bhk" }
   ]
   dbo.collection(`${collectionName}`).insertMany(myobjs, function(err, res) {
+<<<<<<< HEAD
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
     if (err) throw err;
     console.log("Document insert successfully");
     db.close();
   });
 });
+<<<<<<< HEAD
 <<<<<<< HEAD
  */
 
@@ -135,6 +164,10 @@ mongoClient.connect(url, function(err, db) {
 
 // Insert Record -3 | BulkWrite ?
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+
+// Insert Record -3 | BulkWrite ?
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 
 // Find Records
 // Find one
@@ -145,10 +178,14 @@ mongoClient.connect(url, function(err, db) {
   dbo.collection(`${collectionName}`).findOne({}, function(err, result) {
     if (err) throw err;
 <<<<<<< HEAD
+<<<<<<< HEAD
     console.log(result.name, result.address);
 =======
     console.log(result);
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+    console.log(result);
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
     db.close();
   });
 });
@@ -156,9 +193,12 @@ mongoClient.connect(url, function(err, db) {
 
 // Find all-1
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
 =======
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 mongoClient.connect(url, function(err, db) {
   if (err) throw err;
   var dbo = db.db(`${databaseName}`);
@@ -169,9 +209,12 @@ mongoClient.connect(url, function(err, db) {
   });
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
 =======
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 
 // Find all-2
 /*

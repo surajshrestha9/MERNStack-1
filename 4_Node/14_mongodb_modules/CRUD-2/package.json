@@ -2,9 +2,12 @@
   "name": "myresume",
   "version": "1.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "description": "",
 =======
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,9 +22,14 @@
     "mongodb": "^4.8.0",
     "nodemon": "^2.0.19"
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 =======
   },
   "description": ""
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+  },
+  "description": ""
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 }

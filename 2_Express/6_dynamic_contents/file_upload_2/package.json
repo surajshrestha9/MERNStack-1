@@ -1,0 +1,31 @@
+{
+  "name": "file_upload_2",
+  "version": "1.0.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "description": "CRUD-3\r -insert\r -display all\r -edit\r -delete\r -search\r -export to (pdf,csv)",
+=======
+  "description": "",
+>>>>>>> 9602b4ed8b3298b70434d6deced5b3a54057e784
+=======
+  "description": "",
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
+  "main": "data_encrypt_decrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
+=======
+  "license": "ISC"
+>>>>>>> 9602b4ed8b3298b70434d6deced5b3a54057e784
+=======
+  "license": "ISC"
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
+}

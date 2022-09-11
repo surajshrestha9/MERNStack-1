@@ -1,0 +1,23 @@
+<script>
+	function purchaseMilk(amount){    //amount->parameter
+		// console.log(amount);
+		const RATE = 45;       //readonly variable
+		item={
+			qty:0,
+			amount : amount,
+
+		};
+		if (amount < RATE){
+			return item;
+		}
+		else{
+			var qty =amount/RATE;    
+			amount= amount % RATE;
+			item.qty=Math.floor(qty);
+			item.amount=amount;
+			return item;
+		}
+		console.log(item);
+	}
+		console.log(purchaseMilk(100));//call---10->argument
+</script>

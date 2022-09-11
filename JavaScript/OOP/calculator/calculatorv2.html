@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>New calculator</h2>
+    <p> firstno:  <input type="text" id="txtN1"></p>
+    <p> secondno: <input type="text" id="txtN2"></p>
+    <!-- <p> result: <input type="text" id="txtResult"></p>      general html lai inner html use garna mila input type jasto lai mildaina -->
+    <p> result: <input type="text" id="txtResult"></p>      <!-- general html lai inner html use garna mila input type jasto lai mildaina -->
+    <p> <input type="button" value="add" onclick="calcV2()"></p>
+    <script src="myscript.js"></script>
+    <script>
+        var calcV2= new calculatorV2(10,2);
+        // var calc= new calculatorV2(Number(txtN1.value),Number(txtN2.value))
+        var myCalc=new myCalculator(calcV2);
+        myCalc.sum();
+        calcV2=myCalc.getCalcV2();
+        
+
+    </script>
+    
+</body>
+</html>

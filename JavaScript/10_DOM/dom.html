@@ -1,0 +1,357 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT DOM</title>
+    <script src="dom.js"></script>
+  </head>
+  <body>
+    <!-- <h2 class="title" id="first-title">First title</h2>
+    <h2 class="title" id="second-title">second title</h2> -->
+<!--     
+    <script>
+    <h2>JAVASCRIPT DOM</h2>
+    <!-- <p id="p1"><div>HI, <b>Shibu </b> Chapagain.</div></p> -->
+<!-- <p id="p1">HI, <b>GOOD MORNING</b> SHIVA</p>
+    <p id="p2"></p> -->
+<!-- <>
+      // let obj1 = document.getElementById("p1");
+      // //getting
+      // // console.log(obj1);
+      // document.write(obj1.textContent); // HI, GOOD MORNING SHIVA //return only data without css
+      // document.write(obj1.innerHTML); //return with css value
+      // // console.log(obj1.innerText);
+
+      //setting
+      // let obj1 = document.getElementById("p1");
+      // let obj2 = document.getElementById("p2");
+      // // obj2.innerHTML = obj1.innerHTML;
+      // // obj2.innerText = obj1.innerText;
+      // obj2.textContent = obj1.textContent;
+      // console.log(obj2);
+
+  </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript dom</title>
+    <script defer src="dom.js"></script>
+  </head>
+  <body>
+    <!-- <p class="intro">The DOM is very useful.</p>
+    <p class="intro">
+      This example demonstrates the <b>getElementsByClassName</b> method.
+    </p>
+    <p id="demo"></p> -->
+
+    <!--JUST SAMLL TASK-->
+    <!-- 
+    <textarea id="text">
+      45
+    </textarea>
+    <button id="btn">Click me!</button>
+    <p id="result"></p> -->
+
+    <!-- <p class="intro">This is a intro</p>
+    <p class="intro">THIS IS A MEDIATE</p>
+    <p class="demo"></p> -->
+
+    <!-- <p>Hello</p>
+    <p>Hi</p>
+    <p>How are you?</p>
+    <p id="p4">NA</p>
+    <script>
+      var elements = document.getElementsByTagName("p");
+      console.log(elements.length);
+      for (let i = 0; i < elements.length; i++) {
+        console.log(elements[i].innerHTML);
+      }
+      document.getElementById("p4").innerHTML = "Welcome to broadway";
+    </script> -->
+
+    <!-- <div id="div1">
+      <p>First Paragraph</p>
+      <p>Second Paragraph</p>
+    </div>
+    <button onclick="f1()">Click to me</button>
+    <script>
+      function f1() {
+        var element = document.getElementById("div1");
+        element.querySelector("p").innerHTML = "Hello!";
+      }
+    </script> -->
+
+    <!-- <div id="div2">
+      <p>Hii</p>
+      <p>Shiva</p>
+    </div>
+    <button onclick="change()">Chnage</button>
+    <script>
+      function change() {
+        let el = document.getElementById("div2");
+        el.querySelector("p").innerHTML = "hii";
+      }
+    </script> -->
+    <!-- 
+    <div id="div1">
+      <h2 class="c1">Heading-1</h2>
+      <p class="c1">Paragraph-1</p>
+      <p class="c1">Paragraph-2</p>
+      <h2 class="c1">Heading-2</h2>
+      <p class="c1">Paragraph-1</p>
+      <p class="c1">Paragraph-2</p>
+    </div>
+
+    <button onclick="f1()">Try it</button>
+    <script>
+      function f1() {
+        var x = document.getElementById("div1");
+        x.querySelector("p.c1").innerHTML = "Hello World!";
+      }
+    </script> -->
+
+    <!-- <div id="div2">
+      <h2 class="c1">Heading-1</h2>
+      <p class="c1">heading-1 para-1</p>
+      <p class="c1">heading-1 para-2</p>
+      <h2 class="c1">Heading-2</h2>
+      <p class="c1">Heading-2 para-1</p>
+      <p class="c1">Heading-2 para-2</p>
+    </div>
+    <script>
+      // let element = document.getElementsByClassName("c1");
+      // console.log(element);
+      let x = document.getElementById("div2");
+      console.log(x);
+      x.querySelector("p.c1").innerHTML = "CHANGE";
+    </script> -->
+
+    <!-- <div id="div1">
+      <p id="p1">Paragraph-1</p>
+      <p id="p2">Unchange paragraph</p>
+    </div>
+    <button onclick="f1()">Click Me</button>
+    <script>
+      var x = document.getElementById("div1");
+      // console.log(x);
+      function f1() {
+        x.querySelector("#p2").innerHTML = "Broadway InfoSys Nepal";
+      }
+    </script> -->
+    <!-- 
+    <div id="div1">
+      <p><a href="https://www.facebook.com">facebook.com</a></p>
+      <p><a href="http://www.disney.com" target="_blank">disney.com</a></p>
+      <p>
+        <a href="http://www.wikipedia.org" post="_tghdfjop">wikipedia.org</a>
+      </p>
+    </div>
+    <button onclick="myFunction()">Click Me</button>
+    <script>
+      function myFunction() {
+        var elements = document.getElementById("div1");
+        elements.querySelector("a[target]").style.border = "10px solid red";
+        elements.querySelector("a[post]").style.border = "10px solid black";
+        elements.querySelector("a").style.border = "2px solid green";
+      }
+    </script> -->
+
+    <!-- <style>
+      #div1 {
+        border: 2px solid green;
+        margin: 3px;
+      }
+    </style>
+
+    <div id="div1">
+      <h2 class="c1">Heading-2</h2>
+      <p class="c1">Paragraph-1</p>
+      <p class="c1">Paragraph-2</p>
+    </div>
+    <button onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        var elements = document.getElementById("div1").querySelectorAll(".c1");
+        console.log(elements);
+        // elements[0].style.backgroundColor = "green";
+        for (let i in elements) {
+          // console.log(i); // do check it out...
+          if (i == "Number") {
+            console.log(i.length);
+          }
+        }
+      }
+    </script> -->
+
+    <!-- <div id="div1">
+      <h2 class="c2">Heading</h2>
+      <p class="c2">Paragraph-1</p>
+      <p class="c2">Paragraph-2</p>
+      <p>Paragraph <span class="c2">-3</span></p>
+    </div> -->
+    <!-- <button onclick="fun()">Click</button> -->
+    <!-- <script>
+      let element = document.getElementById("div1").querySelectorAll(".c2");
+      console.log(element.length);
+      for (let i = 0; i < element.length; i++) {
+        element[i].style.backgroundColor = "green";
+      }
+      for (let i of element) {
+        console.log(i.innerHTML);
+      }
+      for (let index in element) {
+        console.log(index.length);
+      }
+    </script> -->
+
+    <!-- <button id="btn1">Click Me</button>
+    <p id="c1"></p>
+    <script>
+      // document.getElementById("btn1").addEventListener("click", myFunction);
+      // function myFunction() {
+      //   document.getElementById("c1").innerHTML = "Hello World";
+      // }
+      // let myFunction = () => {
+      //   document.getElementById("c1").innerHTML = "Ello";
+      // };
+      let button = document.getElementById("btn1");
+      // document.getElementById("btn1").addEventListener("click", myFunction);
+      // button.addEventListener("click", myFunction);
+
+      button.addEventListener("click", function () {
+        document.getElementById("c1").innerHTML = "Ello";
+      });
+    </script> -->
+
+    <!--<script>
+      // var elements = document.getElementsByClassName("intro");
+      // // for (let i = 0; i < elements.length; i++) {
+      // //   // console.log(elements[i].innerHTML);
+      // //   // console.log(elements[i].innerText);
+      // //   // console.log(elements[i].textContent);
+      // //   document.write(elements[i].innerHTML);
+      // // }
+      // console.log(elements.length);
+      // let count = 0;
+      // for (let index in elements) {
+      //   // console.log(elements[index].innerHTML);
+      //   if (count < elements.length) {
+      //     // console.log(index);
+      //     document.write(elements[index].innerHTML);
+      //     count++;
+      //   }
+      // }
+
+      // let textContent = document.getElementById("text");
+      // // console.log(textContent.textContent);
+      // let button = document.getElementById("btn");
+      // let result = document.getElementById("result");
+      // button.addEventListener("click", function () {
+      //   let data = textContent.textContent;
+      //   result.textContent = data;
+      // });
+    // </script> -->
+
+    <!--DAY -2 -->
+
+    <!-- <div id="div1">
+      <p>First Paragraph</p>
+      <p>Second Paragraph</p>
+    </div>
+    <button onclick="fun()">Click</button>
+    <script>
+      // business idea ....
+      // querySelector() ....
+      function fun() {
+        let element = document.querySelector("#div1");
+        element.querySelector("p").innerHTML = "hii";
+      }
+    </script> -->
+
+    <!--NEW ONE-->
+    <!-- <button id="btn1">click me</button>
+    <script>
+      let element = document.getElementById("btn1");
+      element.addEventListener("click", f1);
+      element.addEventListener("click", f2);
+
+      function f1() {
+        alert("hi from f1");
+      }
+
+      function f2() {
+        alert("hi from f2");
+      }
+    </script> -->
+    <!-- 
+    <button id="btn1">Click</button>
+    <p id="c1"></p>
+    <script>
+      let obj1 = document.getElementById("btn1");
+      obj1.addEventListener("mouseover", f1);
+      obj1.addEventListener("click", f2);
+      obj1.addEventListener("mouseout", f3);
+
+      function f1() {
+        document.getElementById("c1").innerHTML = "mouse over";
+      }
+      function f2() {
+        document.getElementById("c1").innerHTML = "mouse click";
+      }
+      function f3() {
+        document.getElementById("c1").innerHTML = "mouse out";
+      }
+      //element
+      //attribute
+    </script> -->
+
+    <!--                            TASK         -->
+    <!-- <div id="div1">
+      <h2 class="c1">Heading-2</h2>
+      <p class="c1">Paragraph-1</p>
+      <p class="c1">Paragraph-2</p>
+    </div>
+    <button onclick="f1()">Click Me</button>
+    <script>
+      function f1() {
+        var element = document.getElementById("div1").querySelectorAll(".c1");
+        // let element = document.getElementById("div1");
+        // console.log(element.length);
+        console.log(element);
+        console.log(element.length);
+        // for (let i in element) {
+        //   console.log(i);
+        // }
+        console.log(element[0]);
+
+        for (let i in element) {
+          // console.log(i); // do check it out... it gives own prototype ....
+          // The prototype is an object that is associated with every functions and objects by default in JavaScript, where function's prototype property is accessible and modifiable and object's prototype property (aka attribute) is not visible. Every function includes prototype object by default.
+          // console.log(i.length);
+        }
+
+        for (let el of element) {
+          console.log(el.textContent);
+        }
+      }
+
+      let shiva = {
+        age: 23,
+        greet: function () {
+          console.log("good afternoon");
+        },
+      };
+      console.log(shiva);
+    </script> -->
+
+    <!--          DAY -3          -->
+  </body>
+</html>

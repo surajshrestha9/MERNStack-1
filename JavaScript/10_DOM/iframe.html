@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice JAVASCRIPT DOM</title>
+  </head>
+  <body>
+    <!-- <h2 class="head">Hii</h2>
+    <h2 class="head">Shiva</h2>
+    <script>
+      let heading = document.getElementsByClassName("head");
+      // console.log(heading);
+      // for (let h of heading) {
+      //   console.log(h.textContent);
+      // }
+
+      let title = document.createElement("h1");
+      title.className = "head";
+      title.textContent = "Chapagain";
+      console.log(title);
+      title.classList.add("hidden");
+      console.log(title);
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <style>
+      .demoClass {
+        color: red;
+      }
+    </style>
+    <h2 id="h2">Shiva chapagain</h2>
+    <button id="btn">CLICK</button>
+    <script>
+      let heading1 = document.querySelector("#h2");
+      console.log(heading1);
+      let button = document.querySelector("#btn");
+      let process = () => {
+        heading1.setAttribute("class", "demoClass");
+        heading1.classList.remove("class", "demoClass");
+      };
+      button.addEventListener("click", process);
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <h1>SHIVA CHAPAGAIN</h1>
+    <script>
+      let head = document.querySelector("h1");
+      head.setAttribute("id", "h1");
+      head.setAttribute("class", "heading1");
+      let text = head.getAttribute("class");
+      console.log(text); //heading
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <div id="myDIV">
+      <p class="child">I am a paragraph.</p>
+      <p class="child">I am a paragraph.</p>
+      <p class="child">I am a paragraph.</p>
+    </div>
+    <p id="demo"></p>
+    <script>
+      const element = document.getElementById("myDIV");
+      console.log(element);
+      const nodes = element.getElementsByClassName("child");
+      console.log(nodes);
+      console.log(nodes.length);
+      // document.getElementById("demo").innerHTML = nodes.length;
+      // for (let i in nodes) {
+      //   console.log(i); // 0,1,2,length, item, namedItem
+      // }
+      for (let el of nodes) {
+        // console.log(el);
+        console.log(el.textContent);
+      }
+    </script> -->
+
+    <!--                     break  (hasAttribute)                     -->
+
+    <!-- <h2 id="head" class="heading1">SHIVA CHAPAGAIN</h2>
+    <script>
+      let head = document.querySelector(".heading1");
+      console.log(head);
+      console.log(head.hasAttribute("head")); //false
+      console.log(head.hasAttribute("class"));
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <button id="btn">Move</button>
+    <p id="p">chapagain</p>
+    <h2 id="h2">SHIVA</h2>
+    <script>
+      let button = document.querySelector("#btn");
+      let para = document.querySelector("#p");
+      let heading = document.querySelector("#h2");
+      function change() {
+        //both are use for switch their position ...
+        // heading.insertAdjacentElement("beforeend", para); // chnage paragraph color to bold same as heading.
+        heading.insertAdjacentElement("afterend", para); // doesnot change paragraph color to same as heading
+      }
+      button.addEventListener("click", change);
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <div class="demo munna">
+      Grandparent
+      <div class="demo container">
+        Parent
+        <div id="myElement" class="demo">
+          The parent of this div element will be selected.
+        </div>
+      </div>
+    </div>
+    <script>
+      const element = document.getElementById("myElement");
+      console.log(element);
+      const closet = element.closest(".container");
+      // const closet = element.closest(".munna");
+      // console.log(closet);
+      // console.log(closet);
+      if (closet) {
+        closet.style.border = "4px solid black";
+      }
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <button id="btn">Click</button>
+    <h2 id="h2">HEADER</h2>
+    <script>
+      let button = document.querySelector("#btn");
+      let head = document.querySelector("#h2");
+      button.addEventListener("click", () => {
+        let html = `<h1>HII IAM SHIVA </h1>`;
+        let data = `<p>SHIVA CHAPAGAIN </p>`;
+        // head.insertAdjacentHTML("afterend", html);
+        head.insertAdjacentHTML("afterend", data);
+      });
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <style>
+      .democlass {
+        color: blue;
+      }
+    </style>
+    <button id="btn">CLICK</button>
+    <h2 class="democlass">SHIVA CHAPAGAIN</h2>
+    <script>
+      let head = document.querySelector(".democlass");
+      // console.log(head);
+      let check = document.getElementsByTagName("h2")[0];
+      console.log(check);
+      let button = document.querySelector("#btn");
+      button.addEventListener("click", () => {
+        head.removeAttribute("class"); //takes key not value.. i mean take class not className ...
+        // document.getElementsByTagName("h2")[0].removeAttribute("class");
+      });
+    </script> -->
+
+    <!--                     break                       -->
+
+    <!-- <p>
+      <abbr id="myAbbr" title="World Health Organization">WHO</abbr> was founded
+      in 1948.
+    </p>
+    <script>
+      let data = document.querySelector("#myAbbr");
+      console.log(data);
+      console.log(data.title);
+      console.log(data.textContent);
+    </script> -->
+
+    <!--                     break  (target)                     -->
+
+    <!-- <button>this is a button</button>
+    <p id="demo"></p>
+    <script>
+      function myFun(event) {
+        const element = event.target;
+        console.log(element);
+        document.querySelector(
+          "#demo"
+        ).innerHTML = `Triggered by ${element.tagName}`;
+      }
+    </script> -->
+  </body>
+</html>

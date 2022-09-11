@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+</head>
+
+<body>
+    <div class="calc">
+        <div class="calc-content">
+            <h2 style="text-align: center;">Calculator</h2>
+            <p class="input-item"> <span> First subject:</span>
+                <input class="input-input" type="text" placeholder="enter first number" id="test1">
+            </p>
+            <p class="input-item"><span> Second Subject:</span>
+                <input class="input-input" type="text" placeholder="enter second number" id="test2">
+            </p>
+            <p class="input-item"><span> Third Subject:</span>
+                <input class="input-input" type="text" placeholder="enter third number" id="test3">
+            </p>
+            <p class="input-item"><span> Result:</span>
+                <input class="input-input" type="text" id="testResult">
+            </p>
+            <div class="btn-box">
+                <input class="btn" type="button" value="PROCESS" onclick="calc()">
+                <!-- <input class="btn" type="button" value="ADD" onclick="calculatorV2(num1,num2)"> -->
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="marksheet.js"></script>
+<script>
+    function calc() {
+        var sub1 = test1.value;
+        var sub2 = test2.value;
+        var sub3 = test3.value;
+        sub1 = Number(sub1);
+        sub2 = Number(sub2);
+        sub3 = Number(sub3);
+        res = new student(sub1, sub2, sub3);
+        ms = new processStudent(res);
+        ms.calcTotal();
+        res = ms.getStud();
+        testResult.value = res.getTotal();
+}
+</script>

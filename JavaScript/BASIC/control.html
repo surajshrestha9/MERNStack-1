@@ -1,0 +1,210 @@
+<script>
+  //conditional operator.
+  //==, !=, ===, >, <, >=,<=.
+  //data type.
+  //condition
+  //condition operator(condition)? result1:result2
+
+  //if statement.
+  /*
+let num=+(prompt('enter any value.'));
+if(num!=0){
+console.log('zero');
+}else{
+console.log('non zero');
+}
+
+
+//if statement2..
+const num1=5;
+if(num1!=0){
+console.log(`${num1} is not a zer0.`);
+}
+
+const num1=3;
+if(num1!==0){
+console.log('zero');
+}
+if(num1 !=0){
+console.log('Not zer0');
+}
+
+const num1=+(prompt('Enter any number: '));
+//string to integer.
+//1.. num1=Number(num1);
+//2.. num1=parseInt(num1);
+if(num1==0){
+console.log(`${num1} is zero`);
+}else{
+console.log(`${num1} is not a zero`);
+}
+
+
+//Task 1: Check whether a number is odd or even?
+//declare.
+let num=null;
+let result=null;
+//input
+num=+(prompt('Enter any number'));//get number and change to number.
+if(num%2==0){//to check odd or even.
+//result=(`${num} is even number`);//print the result
+result='even';
+}else{
+//console.log(`${num} is odd number`);
+result='odd';
+}
+console.log(result);
+
+
+//Task2-->Print week day name based on user input number.
+let input;
+let result;
+input=+(prompt('Enter the number in between (1-7).'));
+switch(input){
+case 1:
+result='sunday';
+break;
+case 2:
+result='Monday';
+break;
+case 3:
+result='Tuesday';
+break;
+case 4:
+result='Wednesday';
+break;
+case 5:
+result='Thursday';
+break;
+case 6:
+result='Friday';
+break;
+case 7:
+result='Saturday';
+break;
+default:
+result='Invalid input';
+}
+console.log(result);
+
+
+let input;
+let result;
+input=+(prompt('Enter the number in between (1-7).'));
+if(input==1){
+result='Sunday';
+}else if(input==2){
+result='Monday';
+}else if(input==7){
+result='Saturday';
+}else{
+result='Other';
+}
+console.log(result);
+
+
+//Task3---->Find largest number among three number.
+//declare
+let n1,n2,n3,result;
+n1=prompt('Enter first Number');
+n2=prompt('Enter Second Number');
+n3=prompt('Enter Three Number');
+
+//process
+n1=parseInt(n1);
+n2=parseInt(n2);
+n3=parseInt(n3);
+
+if(!(n1==n2)&&(n1==n3)){
+if(n1>=n2)
+	if(n1>=n3)
+		result='n1 greater';
+
+if(n2>=n1)
+	if(n2>=n3)
+		result='n2 greater';
+
+if(n3>=n1)
+	if(n3>=n2)
+		result='n3 greater';
+}else{
+result='All are same';
+}
+console.log(result);
+
+//switch, while, do while, for loop , continue break etc...
+
+
+
+//should focus on (boolean,number(int,float),string,object).
+
+//switch Statement...
+
+//if statement with multiple condition...
+//a.. logical AND or logical OR..
+
+//declare
+let n1=null;
+let n2=null;
+let n3=null;
+let result=null;
+
+//input
+n1=5;
+n2=3;
+n3=-2;
+
+
+//process
+if((n1>=n2) && (n1>=n3)){
+result=n1;
+}
+else if((n2>=n1)&& (n2>=n3)){
+result=n2;
+}
+else{
+result=n3;
+}
+
+//output
+console.log(result);
+*/
+
+  /////////////////////////////////
+
+  //switch case....
+  let num1 = prompt("Enter any number(1-7).");
+  let result = null;
+
+  //processing...
+  num1 = parseInt(num1);
+  switch (num1) {
+    case 1:
+      result = "Sunday";
+      break;
+    case 2:
+      result = "Monday";
+      break;
+    case 3:
+      result = "Tuesday";
+      break;
+    case 4:
+      result = "Wednesday";
+      break;
+    case 5:
+      result = "Thursday";
+      break;
+    case 6:
+      result = "Friday";
+      break;
+    case 7:
+      result = "Saturday";
+      break;
+    default:
+      result = "Out of range.";
+      break;
+  }
+  //output
+
+  console.log(result);
+</script>

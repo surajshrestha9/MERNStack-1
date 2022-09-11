@@ -1,0 +1,30 @@
+{
+<<<<<<< HEAD
+  "dependencies": {
+    "node-file-encrypt": "^0.0.6"
+  },
+  "name": "22_encypt_decrypt_module",
+  "version": "1.0.0",
+  "main": "data_encrypt_decrypt.js",
+  "devDependencies": {},
+=======
+  "name": "23_working",
+  "version": "1.0.0",
+  "description": "",
+  "main": "encrypt_decrypt_module.js",
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+<<<<<<< HEAD
+  "description": ""
+=======
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "node-file-encrypt": "^0.0.6"
+  }
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
+}

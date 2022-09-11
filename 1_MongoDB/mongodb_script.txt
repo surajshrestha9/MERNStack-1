@@ -53,27 +53,31 @@ updateMany()
 db.person.deleteOne({_id:ObjectId("62d76bb1c537a24dd7d3c10a")})
 db.person.deleteOne({pid:3})
 
+# Security on MongoDB
+<<<<<<< HEAD
+<<<<<<< HEAD
+1.Database Level
+2.Collection Level
+
+	#Enable Security
+	#Create user
+	#Assign role to User
+password manage
 
 
 
+=======
+1. Database Level
+2. Collection Level
+>>>>>>> b8022613af3c95b59e73fbbb7be144438caaec6f
+=======
+1. Database Level
+2. Collection Level
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 
+# Enable Security
+# Create user
+# Assign role to user
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Note:
+- root user -> super admin

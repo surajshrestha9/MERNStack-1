@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 //yeslai controller ma call garnuparcha mongo client bata export
 
 import mongodb from 'mongodb'
@@ -51,6 +52,8 @@ var getAll = () =>  mongoClient.connect(url, function (err, db) {
 
 export { insertRecord, getAll }
 =======
+=======
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 // var mongoClient = require('mongodb').MongoClient;
 
 import mongodb from 'mongodb'
@@ -105,5 +108,9 @@ var getAll = async () => {
   });
 }
 
+<<<<<<< HEAD
 export { insertRecord, getAll };
 >>>>>>> 0cac7901f3da025ddfde347bc2905bb3f33a13a3
+=======
+export { insertRecord, getAll };
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT DOM</title>
+  </head>
+  <body>
+    <ul class="list">
+      <li>TEA</li>
+      <li>COFFEE</li>
+    </ul>
+    <p id="para"></p>
+    <button id="showAll">SHOWALL</button>
+    <button id="addItem">ADDITEM</button>
+    <script>
+      //show all items
+      let list = document.querySelector(".list");
+      let paragraph = document.querySelector("#para");
+      //   console.log(paragraph);
+      let addItemBtn = document.querySelector("#addItem");
+      let showAllItemBtn = document.querySelector("#showAll");
+
+      let showAllItem = () => {
+        let total = [];
+        let listItem = list.children;
+        for (let i = 0; i < listItem.length; i++) {
+          // console.log(listItem[i].innerHTML);
+          //   document.querySelector("#para").innerHTML +=
+          //     listItem[i].innerHTML + "\n";
+          total.push(listItem[i].innerHTML);
+          //   console.log(total);
+        }
+        document.querySelector("#para").innerHTML = total;
+        return total;
+      };
+      //   showAllItem();
+      //   console.log(showAllItem());
+      //   let totalItem = showAllItem();
+      //   console.log(totalItem);
+      showAllItemBtn.addEventListener("click", showAllItem);
+
+      // add items
+
+      addItemBtn.addEventListener("click", function () {
+        let totalItem = showAllItem();
+
+        let item = "li";
+        let node = document.createElement(item);
+        //   console.log(node);
+        let textNode = document.createTextNode("JAVASCRIPT");
+        //   console.log(textNode); // "TEA"
+        //   console.log(textNode.nodeValue); //TEA
+        //   console.log(totalItem.includes(textNode.nodeValue));
+        //   console.log(totalItem.includes("TEA"));
+        if (totalItem.includes(textNode.nodeValue)) {
+          alert("already exit");
+        } else {
+          node.appendChild(textNode);
+          list.appendChild(node);
+          // console.log(list);
+        }
+        //   if(list.innerHTML);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "static_files_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-favicon": "^2.0.1",
+    "mongoose": "^6.5.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "multer": "^1.4.5-lts.1",
+=======
+    "nodemon": "^2.0.19",
+>>>>>>> a88ddbd727afcf8d32d7b42443f993674ddc99db
+=======
+    "nodemon": "^2.0.19",
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
+    "serve-favicon": "^2.5.0"
+  },
+  "description": ""
+}

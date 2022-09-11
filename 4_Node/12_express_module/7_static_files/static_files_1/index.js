@@ -7,11 +7,15 @@ import {join} from 'path';
 // Static Files
 // app.use(express.static('public'));
 <<<<<<< HEAD
+<<<<<<< HEAD
 app.use(express.static(join(process.cwd(), 'public')));//static content chai ya bata use hunxa
 //css,image,js,music movies, pdf etc
 =======
 app.use(express.static(join(process.cwd(), 'public'))); //css, image, js, music, movies, and files (csv, pdf, txt, ini, xml)
 >>>>>>> ef527169f4ddf97cd705d35ab317cfd13391b4be
+=======
+app.use(express.static(join(process.cwd(), 'public'))); //css, image, js, music, movies, and files (csv, pdf, txt, ini, xml)
+>>>>>>> 01d45c7733214414338d0a31c679e9aef5f685a8
 
 //Virtual
 /*
